@@ -24,8 +24,9 @@ expr:
 	| (Number)													# number
 	| (Identifier)												# identifier
 	| ('(' expr ')')											# parens
+	| (FuncIdentifier '(' ')')									# call
 	| (FuncIdentifier '(' (Identifier (',' Identifier)*)? ')')	# call
-	| '(' expr ',' expr (',' expr)* ')'							# tuple
+	| '(' expr (',' expr)+ ')'									# tuple
 	| (If expr block Else block)								# if;
 
 struct:
@@ -43,9 +44,10 @@ typeDef:
 	)* '}';
 
 type:
-	Identifier ('|' Identifier)*
-	| '(' Identifier ',' Identifier (',' Identifier)* ')'
-	| Identifier '<' Identifier (',' Identifier)* '>';
+	Identifier
+	| type ('|' type)+
+	| '(' type (',' type)+ ')'
+	| type '<' type (',' type)* '>';
 
 /*
  * Lexer Rules
