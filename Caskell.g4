@@ -12,14 +12,13 @@ includePath: Identifier ('.' Identifier)*;
 
 func: Func Identifier '(' argList ')' ('->' type)? block;
 
-argList: 
+argList:
 	(pattern (',' pattern)*)?
 	| (pattern ':' type (',' pattern ':' type)*);
 
-
-type: 
-	(Identifier)					 	# identyfier
-	| '(' type ')'					 	# typeParens
+type:
+	(Identifier)						# typeIdentifier
+	| '(' type ')'						# typeParens
 	| '(' type (',' type)+ ')'			# typeTuple
 	| type '(' (type (',' type)*)? ')'	# typeCall
 	| '[' type ']'						# typeArray

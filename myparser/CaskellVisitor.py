@@ -34,6 +34,36 @@ class CaskellVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CaskellParser#typeCall.
+    def visitTypeCall(self, ctx:CaskellParser.TypeCallContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#typeArray.
+    def visitTypeArray(self, ctx:CaskellParser.TypeArrayContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#typeArrow.
+    def visitTypeArrow(self, ctx:CaskellParser.TypeArrowContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#typeTuple.
+    def visitTypeTuple(self, ctx:CaskellParser.TypeTupleContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#typeIdentifier.
+    def visitTypeIdentifier(self, ctx:CaskellParser.TypeIdentifierContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#typeParens.
+    def visitTypeParens(self, ctx:CaskellParser.TypeParensContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CaskellParser#block.
     def visitBlock(self, ctx:CaskellParser.BlockContext):
         return self.visitChildren(ctx)

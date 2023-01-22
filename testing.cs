@@ -5,6 +5,10 @@ func main() {
     putStrLn(show(f((2 + 2) * 2)))
 }
 
+func h(a: Int) -> Int {
+    a
+}
+
 func f(8){
     1
 }
@@ -15,8 +19,4 @@ func f(other){
     }else {
         3
     }
-}
-
-func g ((x:xs)) {
-    123
 }

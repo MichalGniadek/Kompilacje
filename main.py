@@ -26,7 +26,10 @@ class Visitor(CaskellVisitor):
 
     def visitArgList(self, ctx: CaskellParser.ArgListContext):
         return [c.accept(self) for c in ctx.pattern()]
-    
+
+    def visitTypeIdentifier(self, ctx: CaskellParser.IdentifierContext):
+        return ctx.getText()
+
     def visitTypeParens(self, ctx: CaskellParser.ParensContext):
         return f"( {ctx.type().accept(self)} )"
 
@@ -37,10 +40,10 @@ class Visitor(CaskellVisitor):
     def visitTypeCall(self, ctx: CaskellParser.CallContext):
         [func, *args] = [e.accept(self) for e in ctx.type()]
         return f"({func} ({' '.join(args)}))"
-    
+
     def visiTypeArray(self, ctx: CaskellParser.CallContext):
         return f"[ {ctx.type().accept(self)} ]"
-    
+
     def visitTypeArrow(self, ctx: CaskellParser.CallContext):
         children = [c.accept(self) for c in ctx.type()]
         return f"({'->'.join(children)})"
@@ -119,7 +122,7 @@ def run_command(command: str, stdin: str) -> str:
         return result.stdout
 
     result = run(f"wsl bash -i -c '{command}'")
-    return result.stdout or result.stderr
+    return result.stdout
 
 
 def format(text: str) -> str:
