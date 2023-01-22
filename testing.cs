@@ -5,7 +5,11 @@ func main() {
     putStrLn(show(f((2 + 2) * 2)))
 }
 
-func h(a: Int) -> Int {
+func h(a) -> Int {
+    a
+}
+
+func h(a: Int) {
     a
 }
 

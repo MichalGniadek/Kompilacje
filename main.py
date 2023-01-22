@@ -1,5 +1,6 @@
 import argparse
 import subprocess
+import sys
 from antlr4 import *
 from myparser.CaskellLexer import CaskellLexer
 from myparser.CaskellParser import CaskellParser
@@ -20,32 +21,52 @@ class Visitor(CaskellVisitor):
 
     def visitFunc(self, ctx: CaskellParser.FuncContext):
         name = str(ctx.Identifier())
-        args = ' '.join(ctx.argList().accept(self))
+
+        argList = ctx.argList().accept(self)
+        if argList is not None:
+            types, args = argList[0], argList[1]
+        types = '->'.join(types)
+        args = ' '.join(args)
+
+        type_ = ctx.type_()
+        return_type = f"-> {type_.accept(self)}" if type_ is not None else ''
+
         block = ctx.block().accept(self)
-        return f"{name} {args} = {block}"
+
+        type_line = ""
+        if len(types) == len(args) and return_type:
+            type_line = f"{name} :: {types} {return_type} \n"
+        elif return_type == '' and len(types) != 0:
+            print(f"error at {ctx.getSourceInterval()}, function {name}:\n" + 
+                "\tyou can't provide parameter types without specyfing the return type", file=sys.stderr)
+        elif return_type != '' and len(types) == 0 and len(args) != 0:
+            print(f"error at {ctx.getSourceInterval()}, function {name}:\n" +
+                "\tyou can't return type without specyfing the parameter type", file=sys.stderr)
+
+        return f"{type_line}{name} {args} = {block}"
 
     def visitArgList(self, ctx: CaskellParser.ArgListContext):
-        return [c.accept(self) for c in ctx.pattern()]
+        return ([c.accept(self) for c in ctx.type_()], [c.accept(self) for c in ctx.pattern()])
 
     def visitTypeIdentifier(self, ctx: CaskellParser.IdentifierContext):
         return ctx.getText()
 
     def visitTypeParens(self, ctx: CaskellParser.ParensContext):
-        return f"( {ctx.type().accept(self)} )"
+        return f"( {ctx.type_().accept(self)} )"
 
     def visitTypeTuple(self, ctx: CaskellParser.TupleContext):
-        children = [c.accept(self) for c in ctx.type()]
+        children = [c.accept(self) for c in ctx.type_()]
         return f"({','.join(children)})"
 
     def visitTypeCall(self, ctx: CaskellParser.CallContext):
-        [func, *args] = [e.accept(self) for e in ctx.type()]
+        [func, *args] = [e.accept(self) for e in ctx.type_()]
         return f"({func} ({' '.join(args)}))"
 
     def visiTypeArray(self, ctx: CaskellParser.CallContext):
-        return f"[ {ctx.type().accept(self)} ]"
+        return f"[ {ctx.type_().accept(self)} ]"
 
     def visitTypeArrow(self, ctx: CaskellParser.CallContext):
-        children = [c.accept(self) for c in ctx.type()]
+        children = [c.accept(self) for c in ctx.type_()]
         return f"({'->'.join(children)})"
 
     def visitBlock(self, ctx: CaskellParser.BlockContext):
