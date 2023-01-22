@@ -10,9 +10,9 @@ include: From includePath Include Identifier ';';
 
 includePath: Identifier ('.' Identifier)*;
 
-func: Func Identifier '(' argList ')' ('->' type)? block;
+func: Func Identifier '(' argList ')' block;
 
-argList: (Identifier (':' type)? (',' Identifier (':' type)?)*)?;
+argList: (pattern (',' pattern)*)?;
 
 block: '{' (let | do)* expr '}';
 
@@ -20,34 +20,25 @@ let: Let Identifier '=' expr ';';
 do: Do (Identifier Arrow)? expr ';';
 
 expr:
-	expr Operator expr											# operation
-	| (Number)													# number
-	| (Identifier)												# identifier
-	| ('(' expr ')')											# parens
-	| (FuncIdentifier '(' ')')									# call
-	| (FuncIdentifier '(' (Identifier (',' Identifier)*)? ')')	# call
-	| '(' expr (',' expr)+ ')'									# tuple
-	| (If expr block Else block)								# if;
+	expr Operator expr							# operation
+	| (Number)									# number
+	| expr '(' ')'								# call
+	| expr '(' (expr (',' expr)*)? ')'			# call
+	| (Identifier)								# identifier
+	| ('(' Operator ')')						# identifier
+	| ('(' expr ')')							# parens
+	| '(' expr (',' expr)+ ')'					# tuple
+	| (If expr block Else block)				# if
+	| Switch expr '{' (Case pattern block)+ '}'	# switch;
 
-struct:
-	Identifier (
-		'<' Identifier (':' Identifier)? (
-			',' Identifier (':' Identifier)?
-		)* '>'
-	)? typeDef;
-
-typeDef:
-	Identifier
-	| Identifier '(' type (',' type)* ')'
-	| Identifier '{' Identifier ':' type (
-		',' Identifier ':' type
-	)* '}';
-
-type:
-	Identifier
-	| type ('|' type)+
-	| '(' type (',' type)+ ')'
-	| type '<' type (',' type)* '>';
+pattern:
+	pattern Operator pattern							# operationPattern
+	| (Number)											# numberPattern
+	| (Identifier)										# identifierPattern
+	| ('(' pattern ')')									# parensPattern
+	| (Identifier '(' (pattern (',' pattern)*)? ')')	# callPattern
+	| '(' pattern (',' pattern)+ ')'					# tuplePattern
+	| ('_')												# ignorePattern;
 
 /*
  * Lexer Rules
@@ -69,9 +60,7 @@ Include: 'include';
 fragment Letter: [a-zA-Z];
 Identifier: (Letter | '_') (Letter | [0-9_] | '\'')*;
 
-FuncIdentifier: Identifier | ('(' Operator ')');
-
-Operator: [*<>+$=-]+ | ('`' Identifier '`');
+Operator: [:*<>+$=-]+ | ('`' Identifier '`');
 
 Number: [0-9]+;
 Whitespace: [ \t\r\n]+ -> skip;

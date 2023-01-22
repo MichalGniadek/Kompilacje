@@ -1,6 +1,5 @@
 import argparse
 import subprocess
-import sys
 from antlr4 import *
 from myparser.CaskellLexer import CaskellLexer
 from myparser.CaskellParser import CaskellParser
@@ -26,7 +25,7 @@ class Visitor(CaskellVisitor):
         return f"{name} {args} = {block}"
 
     def visitArgList(self, ctx: CaskellParser.ArgListContext):
-        return [str(c) for c in ctx.Identifier()]
+        return [c.accept(self) for c in ctx.pattern()]
 
     def visitBlock(self, ctx: CaskellParser.BlockContext):
         children = [c.accept(self) for c in ctx.getChildren()][1:-1]
@@ -41,8 +40,12 @@ class Visitor(CaskellVisitor):
             var = f"{ctx.Identifier()} <-"
         return f"do {var} {ctx.expr().accept(self)}; "
 
+    def visitIdentifier(self, ctx: CaskellParser.IdentifierContext):
+        return ctx.getText()
+
     def visitCall(self, ctx: CaskellParser.CallContext):
-        return self.visitChildren(ctx)
+        [func, *args] = [e.accept(self) for e in ctx.expr()]
+        return f"({func} ({' '.join(args)}))"
 
     def visitNumber(self, ctx: CaskellParser.NumberContext):
         return ctx.getText()
@@ -52,13 +55,37 @@ class Visitor(CaskellVisitor):
         return f"({','.join(children)})"
 
     def visitParens(self, ctx: CaskellParser.ParensContext):
-        return self.visitChildren(ctx)
+        return f"( {ctx.expr().accept(self)} )"
 
     def visitIf(self, ctx: CaskellParser.IfContext):
-        return self.visitChildren(ctx)
+        cond = ctx.expr().accept(self)
+        [ifTrue, ifFalse] = [c.accept(self) for c in ctx.block()]
+        return f"if {cond} then {ifTrue} else {ifFalse}"
 
     def visitOperation(self, ctx: CaskellParser.OperationContext):
-        return self.visitChildren(ctx)
+        [left, right] = [c.accept(self) for c in ctx.expr()]
+        return f"{left} {ctx.Operator()} {right}"
+
+    def visitSwitch(self, ctx: CaskellParser.SwitchContext):
+        [_, expr, _, *rest, _] = [c.accept(self) for c in ctx.getChildren()]
+        cases = [rest[i+1:i + 3] for i in range(0, len(rest), 3)]
+        cases = [f"{pattern} -> {expr}" for pattern, expr in cases]
+        return f"case {expr} of {';'.join(cases)};"
+
+    def visitParensPattern(self, ctx: CaskellParser.ParensPatternContext):
+        return f"( {ctx.pattern().accept(self)} )"
+
+    def visitTuplePattern(self, ctx: CaskellParser.TuplePatternContext):
+        children = [c.accept(self) for c in ctx.pattern()]
+        return f"({','.join(children)})"
+
+    def visitCallPattern(self, ctx: CaskellParser.CallPatternContext):
+        args = [e.accept(self) for e in ctx.pattern()]
+        return f"({ctx.Identifier().accept(self)} ({' '.join(args)}))"
+
+    def visitOperationPattern(self, ctx: CaskellParser.OperationPatternContext):
+        [left, right] = [c.accept(self) for c in ctx.pattern()]
+        return f"{left} {ctx.Operator()} {right}"
 
     def visitTerminal(self, node):
         return str(node)

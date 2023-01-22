@@ -84,18 +84,43 @@ class CaskellVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CaskellParser#struct.
-    def visitStruct(self, ctx:CaskellParser.StructContext):
+    # Visit a parse tree produced by CaskellParser#switch.
+    def visitSwitch(self, ctx:CaskellParser.SwitchContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CaskellParser#typeDef.
-    def visitTypeDef(self, ctx:CaskellParser.TypeDefContext):
+    # Visit a parse tree produced by CaskellParser#identifierPattern.
+    def visitIdentifierPattern(self, ctx:CaskellParser.IdentifierPatternContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CaskellParser#type.
-    def visitType(self, ctx:CaskellParser.TypeContext):
+    # Visit a parse tree produced by CaskellParser#parensPattern.
+    def visitParensPattern(self, ctx:CaskellParser.ParensPatternContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#numberPattern.
+    def visitNumberPattern(self, ctx:CaskellParser.NumberPatternContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#tuplePattern.
+    def visitTuplePattern(self, ctx:CaskellParser.TuplePatternContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#callPattern.
+    def visitCallPattern(self, ctx:CaskellParser.CallPatternContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#ignorePattern.
+    def visitIgnorePattern(self, ctx:CaskellParser.IgnorePatternContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#operationPattern.
+    def visitOperationPattern(self, ctx:CaskellParser.OperationPatternContext):
         return self.visitChildren(ctx)
 
 

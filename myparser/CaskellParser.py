@@ -10,92 +10,72 @@ else:
 
 def serializedATN():
     return [
-        4,1,30,243,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
-        6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,1,0,1,0,5,0,27,8,0,
-        10,0,12,0,30,9,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,5,2,
-        43,8,2,10,2,12,2,46,9,2,1,3,1,3,1,3,1,3,1,3,1,3,1,3,3,3,55,8,3,1,
-        3,1,3,1,4,1,4,1,4,3,4,62,8,4,1,4,1,4,1,4,1,4,3,4,68,8,4,5,4,70,8,
-        4,10,4,12,4,73,9,4,3,4,75,8,4,1,5,1,5,1,5,5,5,80,8,5,10,5,12,5,83,
-        9,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,3,7,97,8,7,1,
-        7,1,7,1,7,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,
-        8,1,8,5,8,117,8,8,10,8,12,8,120,9,8,3,8,122,8,8,1,8,1,8,1,8,1,8,
-        1,8,4,8,129,8,8,11,8,12,8,130,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,3,
-        8,141,8,8,1,8,1,8,1,8,5,8,146,8,8,10,8,12,8,149,9,8,1,9,1,9,1,9,
-        1,9,1,9,3,9,156,8,9,1,9,1,9,1,9,1,9,3,9,162,8,9,5,9,164,8,9,10,9,
-        12,9,167,9,9,1,9,3,9,170,8,9,1,9,1,9,1,10,1,10,1,10,1,10,1,10,1,
-        10,5,10,180,8,10,10,10,12,10,183,9,10,1,10,1,10,1,10,1,10,1,10,1,
-        10,1,10,1,10,1,10,1,10,1,10,5,10,196,8,10,10,10,12,10,199,9,10,1,
-        10,1,10,3,10,203,8,10,1,11,1,11,1,11,1,11,1,11,1,11,4,11,211,8,11,
-        11,11,12,11,212,1,11,1,11,3,11,217,8,11,1,11,1,11,1,11,4,11,222,
-        8,11,11,11,12,11,223,1,11,1,11,1,11,1,11,1,11,5,11,231,8,11,10,11,
-        12,11,234,9,11,1,11,1,11,5,11,238,8,11,10,11,12,11,241,9,11,1,11,
-        0,2,16,22,12,0,2,4,6,8,10,12,14,16,18,20,22,0,0,265,0,28,1,0,0,0,
-        2,33,1,0,0,0,4,39,1,0,0,0,6,47,1,0,0,0,8,74,1,0,0,0,10,76,1,0,0,
-        0,12,87,1,0,0,0,14,93,1,0,0,0,16,140,1,0,0,0,18,150,1,0,0,0,20,202,
-        1,0,0,0,22,216,1,0,0,0,24,27,3,2,1,0,25,27,3,6,3,0,26,24,1,0,0,0,
-        26,25,1,0,0,0,27,30,1,0,0,0,28,26,1,0,0,0,28,29,1,0,0,0,29,31,1,
-        0,0,0,30,28,1,0,0,0,31,32,5,0,0,1,32,1,1,0,0,0,33,34,5,18,0,0,34,
-        35,3,4,2,0,35,36,5,19,0,0,36,37,5,20,0,0,37,38,5,1,0,0,38,3,1,0,
-        0,0,39,44,5,20,0,0,40,41,5,2,0,0,41,43,5,20,0,0,42,40,1,0,0,0,43,
-        46,1,0,0,0,44,42,1,0,0,0,44,45,1,0,0,0,45,5,1,0,0,0,46,44,1,0,0,
-        0,47,48,5,10,0,0,48,49,5,20,0,0,49,50,5,25,0,0,50,51,3,8,4,0,51,
-        54,5,26,0,0,52,53,5,3,0,0,53,55,3,22,11,0,54,52,1,0,0,0,54,55,1,
-        0,0,0,55,56,1,0,0,0,56,57,3,10,5,0,57,7,1,0,0,0,58,61,5,20,0,0,59,
-        60,5,4,0,0,60,62,3,22,11,0,61,59,1,0,0,0,61,62,1,0,0,0,62,71,1,0,
-        0,0,63,64,5,5,0,0,64,67,5,20,0,0,65,66,5,4,0,0,66,68,3,22,11,0,67,
-        65,1,0,0,0,67,68,1,0,0,0,68,70,1,0,0,0,69,63,1,0,0,0,70,73,1,0,0,
-        0,71,69,1,0,0,0,71,72,1,0,0,0,72,75,1,0,0,0,73,71,1,0,0,0,74,58,
-        1,0,0,0,74,75,1,0,0,0,75,9,1,0,0,0,76,81,5,27,0,0,77,80,3,12,6,0,
-        78,80,3,14,7,0,79,77,1,0,0,0,79,78,1,0,0,0,80,83,1,0,0,0,81,79,1,
-        0,0,0,81,82,1,0,0,0,82,84,1,0,0,0,83,81,1,0,0,0,84,85,3,16,8,0,85,
-        86,5,28,0,0,86,11,1,0,0,0,87,88,5,12,0,0,88,89,5,20,0,0,89,90,5,
-        6,0,0,90,91,3,16,8,0,91,92,5,1,0,0,92,13,1,0,0,0,93,96,5,11,0,0,
-        94,95,5,20,0,0,95,97,5,17,0,0,96,94,1,0,0,0,96,97,1,0,0,0,97,98,
-        1,0,0,0,98,99,3,16,8,0,99,100,5,1,0,0,100,15,1,0,0,0,101,102,6,8,
-        -1,0,102,141,5,23,0,0,103,141,5,20,0,0,104,105,5,25,0,0,105,106,
-        3,16,8,0,106,107,5,26,0,0,107,141,1,0,0,0,108,109,5,21,0,0,109,110,
-        5,25,0,0,110,141,5,26,0,0,111,112,5,21,0,0,112,121,5,25,0,0,113,
-        118,5,20,0,0,114,115,5,5,0,0,115,117,5,20,0,0,116,114,1,0,0,0,117,
-        120,1,0,0,0,118,116,1,0,0,0,118,119,1,0,0,0,119,122,1,0,0,0,120,
-        118,1,0,0,0,121,113,1,0,0,0,121,122,1,0,0,0,122,123,1,0,0,0,123,
-        141,5,26,0,0,124,125,5,25,0,0,125,128,3,16,8,0,126,127,5,5,0,0,127,
-        129,3,16,8,0,128,126,1,0,0,0,129,130,1,0,0,0,130,128,1,0,0,0,130,
-        131,1,0,0,0,131,132,1,0,0,0,132,133,5,26,0,0,133,141,1,0,0,0,134,
-        135,5,13,0,0,135,136,3,16,8,0,136,137,3,10,5,0,137,138,5,14,0,0,
-        138,139,3,10,5,0,139,141,1,0,0,0,140,101,1,0,0,0,140,103,1,0,0,0,
-        140,104,1,0,0,0,140,108,1,0,0,0,140,111,1,0,0,0,140,124,1,0,0,0,
-        140,134,1,0,0,0,141,147,1,0,0,0,142,143,10,8,0,0,143,144,5,22,0,
-        0,144,146,3,16,8,9,145,142,1,0,0,0,146,149,1,0,0,0,147,145,1,0,0,
-        0,147,148,1,0,0,0,148,17,1,0,0,0,149,147,1,0,0,0,150,169,5,20,0,
-        0,151,152,5,7,0,0,152,155,5,20,0,0,153,154,5,4,0,0,154,156,5,20,
-        0,0,155,153,1,0,0,0,155,156,1,0,0,0,156,165,1,0,0,0,157,158,5,5,
-        0,0,158,161,5,20,0,0,159,160,5,4,0,0,160,162,5,20,0,0,161,159,1,
-        0,0,0,161,162,1,0,0,0,162,164,1,0,0,0,163,157,1,0,0,0,164,167,1,
-        0,0,0,165,163,1,0,0,0,165,166,1,0,0,0,166,168,1,0,0,0,167,165,1,
-        0,0,0,168,170,5,8,0,0,169,151,1,0,0,0,169,170,1,0,0,0,170,171,1,
-        0,0,0,171,172,3,20,10,0,172,19,1,0,0,0,173,203,5,20,0,0,174,175,
-        5,20,0,0,175,176,5,25,0,0,176,181,3,22,11,0,177,178,5,5,0,0,178,
-        180,3,22,11,0,179,177,1,0,0,0,180,183,1,0,0,0,181,179,1,0,0,0,181,
-        182,1,0,0,0,182,184,1,0,0,0,183,181,1,0,0,0,184,185,5,26,0,0,185,
-        203,1,0,0,0,186,187,5,20,0,0,187,188,5,27,0,0,188,189,5,20,0,0,189,
-        190,5,4,0,0,190,197,3,22,11,0,191,192,5,5,0,0,192,193,5,20,0,0,193,
-        194,5,4,0,0,194,196,3,22,11,0,195,191,1,0,0,0,196,199,1,0,0,0,197,
-        195,1,0,0,0,197,198,1,0,0,0,198,200,1,0,0,0,199,197,1,0,0,0,200,
-        201,5,28,0,0,201,203,1,0,0,0,202,173,1,0,0,0,202,174,1,0,0,0,202,
-        186,1,0,0,0,203,21,1,0,0,0,204,205,6,11,-1,0,205,217,5,20,0,0,206,
-        207,5,25,0,0,207,210,3,22,11,0,208,209,5,5,0,0,209,211,3,22,11,0,
-        210,208,1,0,0,0,211,212,1,0,0,0,212,210,1,0,0,0,212,213,1,0,0,0,
-        213,214,1,0,0,0,214,215,5,26,0,0,215,217,1,0,0,0,216,204,1,0,0,0,
-        216,206,1,0,0,0,217,239,1,0,0,0,218,221,10,3,0,0,219,220,5,9,0,0,
-        220,222,3,22,11,0,221,219,1,0,0,0,222,223,1,0,0,0,223,221,1,0,0,
-        0,223,224,1,0,0,0,224,238,1,0,0,0,225,226,10,1,0,0,226,227,5,7,0,
-        0,227,232,3,22,11,0,228,229,5,5,0,0,229,231,3,22,11,0,230,228,1,
-        0,0,0,231,234,1,0,0,0,232,230,1,0,0,0,232,233,1,0,0,0,233,235,1,
-        0,0,0,234,232,1,0,0,0,235,236,5,8,0,0,236,238,1,0,0,0,237,218,1,
-        0,0,0,237,225,1,0,0,0,238,241,1,0,0,0,239,237,1,0,0,0,239,240,1,
-        0,0,0,240,23,1,0,0,0,241,239,1,0,0,0,29,26,28,44,54,61,67,71,74,
-        79,81,96,118,121,130,140,147,155,161,165,169,181,197,202,212,216,
-        223,232,237,239
+        4,1,26,192,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,2,8,7,8,2,9,7,9,1,0,1,0,5,0,23,8,0,10,0,12,0,26,9,0,1,
+        0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,5,2,39,8,2,10,2,12,2,42,
+        9,2,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,5,4,54,8,4,10,4,12,4,
+        57,9,4,3,4,59,8,4,1,5,1,5,1,5,5,5,64,8,5,10,5,12,5,67,9,5,1,5,1,
+        5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,3,7,81,8,7,1,7,1,7,1,7,
+        1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,4,8,100,
+        8,8,11,8,12,8,101,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,
+        8,1,8,1,8,1,8,4,8,119,8,8,11,8,12,8,120,1,8,1,8,3,8,125,8,8,1,8,
+        1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,1,8,5,8,138,8,8,10,8,12,8,141,
+        9,8,3,8,143,8,8,1,8,5,8,146,8,8,10,8,12,8,149,9,8,1,9,1,9,1,9,1,
+        9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,5,9,163,8,9,10,9,12,9,166,9,9,
+        3,9,168,8,9,1,9,1,9,1,9,1,9,1,9,4,9,175,8,9,11,9,12,9,176,1,9,1,
+        9,1,9,3,9,182,8,9,1,9,1,9,1,9,5,9,187,8,9,10,9,12,9,190,9,9,1,9,
+        0,2,16,18,10,0,2,4,6,8,10,12,14,16,18,0,0,211,0,24,1,0,0,0,2,29,
+        1,0,0,0,4,35,1,0,0,0,6,43,1,0,0,0,8,58,1,0,0,0,10,60,1,0,0,0,12,
+        71,1,0,0,0,14,77,1,0,0,0,16,124,1,0,0,0,18,181,1,0,0,0,20,23,3,2,
+        1,0,21,23,3,6,3,0,22,20,1,0,0,0,22,21,1,0,0,0,23,26,1,0,0,0,24,22,
+        1,0,0,0,24,25,1,0,0,0,25,27,1,0,0,0,26,24,1,0,0,0,27,28,5,0,0,1,
+        28,1,1,0,0,0,29,30,5,14,0,0,30,31,3,4,2,0,31,32,5,15,0,0,32,33,5,
+        17,0,0,33,34,5,1,0,0,34,3,1,0,0,0,35,40,5,17,0,0,36,37,5,2,0,0,37,
+        39,5,17,0,0,38,36,1,0,0,0,39,42,1,0,0,0,40,38,1,0,0,0,40,41,1,0,
+        0,0,41,5,1,0,0,0,42,40,1,0,0,0,43,44,5,6,0,0,44,45,5,17,0,0,45,46,
+        5,21,0,0,46,47,3,8,4,0,47,48,5,22,0,0,48,49,3,10,5,0,49,7,1,0,0,
+        0,50,55,3,18,9,0,51,52,5,3,0,0,52,54,3,18,9,0,53,51,1,0,0,0,54,57,
+        1,0,0,0,55,53,1,0,0,0,55,56,1,0,0,0,56,59,1,0,0,0,57,55,1,0,0,0,
+        58,50,1,0,0,0,58,59,1,0,0,0,59,9,1,0,0,0,60,65,5,23,0,0,61,64,3,
+        12,6,0,62,64,3,14,7,0,63,61,1,0,0,0,63,62,1,0,0,0,64,67,1,0,0,0,
+        65,63,1,0,0,0,65,66,1,0,0,0,66,68,1,0,0,0,67,65,1,0,0,0,68,69,3,
+        16,8,0,69,70,5,24,0,0,70,11,1,0,0,0,71,72,5,8,0,0,72,73,5,17,0,0,
+        73,74,5,4,0,0,74,75,3,16,8,0,75,76,5,1,0,0,76,13,1,0,0,0,77,80,5,
+        7,0,0,78,79,5,17,0,0,79,81,5,13,0,0,80,78,1,0,0,0,80,81,1,0,0,0,
+        81,82,1,0,0,0,82,83,3,16,8,0,83,84,5,1,0,0,84,15,1,0,0,0,85,86,6,
+        8,-1,0,86,125,5,19,0,0,87,125,5,17,0,0,88,89,5,21,0,0,89,90,5,18,
+        0,0,90,125,5,22,0,0,91,92,5,21,0,0,92,93,3,16,8,0,93,94,5,22,0,0,
+        94,125,1,0,0,0,95,96,5,21,0,0,96,99,3,16,8,0,97,98,5,3,0,0,98,100,
+        3,16,8,0,99,97,1,0,0,0,100,101,1,0,0,0,101,99,1,0,0,0,101,102,1,
+        0,0,0,102,103,1,0,0,0,103,104,5,22,0,0,104,125,1,0,0,0,105,106,5,
+        9,0,0,106,107,3,16,8,0,107,108,3,10,5,0,108,109,5,10,0,0,109,110,
+        3,10,5,0,110,125,1,0,0,0,111,112,5,11,0,0,112,113,3,16,8,0,113,118,
+        5,23,0,0,114,115,5,12,0,0,115,116,3,18,9,0,116,117,3,10,5,0,117,
+        119,1,0,0,0,118,114,1,0,0,0,119,120,1,0,0,0,120,118,1,0,0,0,120,
+        121,1,0,0,0,121,122,1,0,0,0,122,123,5,24,0,0,123,125,1,0,0,0,124,
+        85,1,0,0,0,124,87,1,0,0,0,124,88,1,0,0,0,124,91,1,0,0,0,124,95,1,
+        0,0,0,124,105,1,0,0,0,124,111,1,0,0,0,125,147,1,0,0,0,126,127,10,
+        10,0,0,127,128,5,18,0,0,128,146,3,16,8,11,129,130,10,8,0,0,130,131,
+        5,21,0,0,131,146,5,22,0,0,132,133,10,7,0,0,133,142,5,21,0,0,134,
+        139,3,16,8,0,135,136,5,3,0,0,136,138,3,16,8,0,137,135,1,0,0,0,138,
+        141,1,0,0,0,139,137,1,0,0,0,139,140,1,0,0,0,140,143,1,0,0,0,141,
+        139,1,0,0,0,142,134,1,0,0,0,142,143,1,0,0,0,143,144,1,0,0,0,144,
+        146,5,22,0,0,145,126,1,0,0,0,145,129,1,0,0,0,145,132,1,0,0,0,146,
+        149,1,0,0,0,147,145,1,0,0,0,147,148,1,0,0,0,148,17,1,0,0,0,149,147,
+        1,0,0,0,150,151,6,9,-1,0,151,182,5,19,0,0,152,182,5,17,0,0,153,154,
+        5,21,0,0,154,155,3,18,9,0,155,156,5,22,0,0,156,182,1,0,0,0,157,158,
+        5,17,0,0,158,167,5,21,0,0,159,164,3,18,9,0,160,161,5,3,0,0,161,163,
+        3,18,9,0,162,160,1,0,0,0,163,166,1,0,0,0,164,162,1,0,0,0,164,165,
+        1,0,0,0,165,168,1,0,0,0,166,164,1,0,0,0,167,159,1,0,0,0,167,168,
+        1,0,0,0,168,169,1,0,0,0,169,182,5,22,0,0,170,171,5,21,0,0,171,174,
+        3,18,9,0,172,173,5,3,0,0,173,175,3,18,9,0,174,172,1,0,0,0,175,176,
+        1,0,0,0,176,174,1,0,0,0,176,177,1,0,0,0,177,178,1,0,0,0,178,179,
+        5,22,0,0,179,182,1,0,0,0,180,182,5,5,0,0,181,150,1,0,0,0,181,152,
+        1,0,0,0,181,153,1,0,0,0,181,157,1,0,0,0,181,170,1,0,0,0,181,180,
+        1,0,0,0,182,188,1,0,0,0,183,184,10,7,0,0,184,185,5,18,0,0,185,187,
+        3,18,9,8,186,183,1,0,0,0,187,190,1,0,0,0,188,186,1,0,0,0,188,189,
+        1,0,0,0,189,19,1,0,0,0,190,188,1,0,0,0,20,22,24,40,55,58,63,65,80,
+        101,120,124,139,142,145,147,164,167,176,181,188
     ]
 
 class CaskellParser ( Parser ):
@@ -108,19 +88,18 @@ class CaskellParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "';'", "'.'", "'->'", "':'", "','", "'='", 
-                     "'<'", "'>'", "'|'", "'func'", "'do'", "'let'", "'if'", 
-                     "'else'", "'switch'", "'case'", "'<-'", "'from'", "'include'", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "'('", "')'", "'{'", "'}'", "'['", "']'" ]
+    literalNames = [ "<INVALID>", "';'", "'.'", "','", "'='", "'_'", "'func'", 
+                     "'do'", "'let'", "'if'", "'else'", "'switch'", "'case'", 
+                     "'<-'", "'from'", "'include'", "'struct'", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "<INVALID>", "'('", "')'", 
+                     "'{'", "'}'", "'['", "']'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "Func", "Do", "Let", "If", 
                       "Else", "Switch", "Case", "Arrow", "From", "Include", 
-                      "Identifier", "FuncIdentifier", "Operator", "Number", 
-                      "Whitespace", "LeftParen", "RightParen", "LeftBrace", 
-                      "RightBrace", "LeftBracket", "RightBracket" ]
+                      "Struct", "Identifier", "Operator", "Number", "Whitespace", 
+                      "LeftParen", "RightParen", "LeftBrace", "RightBrace", 
+                      "LeftBracket", "RightBracket" ]
 
     RULE_prog = 0
     RULE_include = 1
@@ -131,12 +110,10 @@ class CaskellParser ( Parser ):
     RULE_let = 6
     RULE_do = 7
     RULE_expr = 8
-    RULE_struct = 9
-    RULE_typeDef = 10
-    RULE_type = 11
+    RULE_pattern = 9
 
     ruleNames =  [ "prog", "include", "includePath", "func", "argList", 
-                   "block", "let", "do", "expr", "struct", "typeDef", "type" ]
+                   "block", "let", "do", "expr", "pattern" ]
 
     EOF = Token.EOF
     T__0=1
@@ -144,31 +121,27 @@ class CaskellParser ( Parser ):
     T__2=3
     T__3=4
     T__4=5
-    T__5=6
-    T__6=7
-    T__7=8
-    T__8=9
-    Func=10
-    Do=11
-    Let=12
-    If=13
-    Else=14
-    Switch=15
-    Case=16
-    Arrow=17
-    From=18
-    Include=19
-    Identifier=20
-    FuncIdentifier=21
-    Operator=22
-    Number=23
-    Whitespace=24
-    LeftParen=25
-    RightParen=26
-    LeftBrace=27
-    RightBrace=28
-    LeftBracket=29
-    RightBracket=30
+    Func=6
+    Do=7
+    Let=8
+    If=9
+    Else=10
+    Switch=11
+    Case=12
+    Arrow=13
+    From=14
+    Include=15
+    Struct=16
+    Identifier=17
+    Operator=18
+    Number=19
+    Whitespace=20
+    LeftParen=21
+    RightParen=22
+    LeftBrace=23
+    RightBrace=24
+    LeftBracket=25
+    RightBracket=26
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -222,29 +195,29 @@ class CaskellParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 28
+            self.state = 24
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==10 or _la==18:
-                self.state = 26
+            while _la==6 or _la==14:
+                self.state = 22
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [18]:
-                    self.state = 24
+                if token in [14]:
+                    self.state = 20
                     self.include()
                     pass
-                elif token in [10]:
-                    self.state = 25
+                elif token in [6]:
+                    self.state = 21
                     self.func()
                     pass
                 else:
                     raise NoViableAltException(self)
 
-                self.state = 30
+                self.state = 26
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 31
+            self.state = 27
             self.match(CaskellParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -293,15 +266,15 @@ class CaskellParser ( Parser ):
         self.enterRule(localctx, 2, self.RULE_include)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 33
+            self.state = 29
             self.match(CaskellParser.From)
-            self.state = 34
+            self.state = 30
             self.includePath()
-            self.state = 35
+            self.state = 31
             self.match(CaskellParser.Include)
-            self.state = 36
+            self.state = 32
             self.match(CaskellParser.Identifier)
-            self.state = 37
+            self.state = 33
             self.match(CaskellParser.T__0)
         except RecognitionException as re:
             localctx.exception = re
@@ -344,17 +317,17 @@ class CaskellParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 39
+            self.state = 35
             self.match(CaskellParser.Identifier)
-            self.state = 44
+            self.state = 40
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==2:
-                self.state = 40
+                self.state = 36
                 self.match(CaskellParser.T__1)
-                self.state = 41
+                self.state = 37
                 self.match(CaskellParser.Identifier)
-                self.state = 46
+                self.state = 42
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -394,10 +367,6 @@ class CaskellParser ( Parser ):
             return self.getTypedRuleContext(CaskellParser.BlockContext,0)
 
 
-        def type_(self):
-            return self.getTypedRuleContext(CaskellParser.TypeContext,0)
-
-
         def getRuleIndex(self):
             return CaskellParser.RULE_func
 
@@ -414,30 +383,19 @@ class CaskellParser ( Parser ):
 
         localctx = CaskellParser.FuncContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_func)
-        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 47
+            self.state = 43
             self.match(CaskellParser.Func)
-            self.state = 48
+            self.state = 44
             self.match(CaskellParser.Identifier)
-            self.state = 49
+            self.state = 45
             self.match(CaskellParser.LeftParen)
-            self.state = 50
+            self.state = 46
             self.argList()
-            self.state = 51
+            self.state = 47
             self.match(CaskellParser.RightParen)
-            self.state = 54
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==3:
-                self.state = 52
-                self.match(CaskellParser.T__2)
-                self.state = 53
-                self.type_(0)
-
-
-            self.state = 56
+            self.state = 48
             self.block()
         except RecognitionException as re:
             localctx.exception = re
@@ -455,17 +413,11 @@ class CaskellParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Identifier(self, i:int=None):
+        def pattern(self, i:int=None):
             if i is None:
-                return self.getTokens(CaskellParser.Identifier)
+                return self.getTypedRuleContexts(CaskellParser.PatternContext)
             else:
-                return self.getToken(CaskellParser.Identifier, i)
-
-        def type_(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(CaskellParser.TypeContext)
-            else:
-                return self.getTypedRuleContext(CaskellParser.TypeContext,i)
+                return self.getTypedRuleContext(CaskellParser.PatternContext,i)
 
 
         def getRuleIndex(self):
@@ -487,41 +439,21 @@ class CaskellParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 74
+            self.state = 58
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==20:
-                self.state = 58
-                self.match(CaskellParser.Identifier)
-                self.state = 61
+            if ((_la) & ~0x3f) == 0 and ((1 << _la) & 2752544) != 0:
+                self.state = 50
+                self.pattern(0)
+                self.state = 55
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==4:
-                    self.state = 59
-                    self.match(CaskellParser.T__3)
-                    self.state = 60
-                    self.type_(0)
-
-
-                self.state = 71
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while _la==5:
-                    self.state = 63
-                    self.match(CaskellParser.T__4)
-                    self.state = 64
-                    self.match(CaskellParser.Identifier)
-                    self.state = 67
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-                    if _la==4:
-                        self.state = 65
-                        self.match(CaskellParser.T__3)
-                        self.state = 66
-                        self.type_(0)
-
-
-                    self.state = 73
+                while _la==3:
+                    self.state = 51
+                    self.match(CaskellParser.T__2)
+                    self.state = 52
+                    self.pattern(0)
+                    self.state = 57
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
@@ -586,33 +518,33 @@ class CaskellParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 76
+            self.state = 60
             self.match(CaskellParser.LeftBrace)
-            self.state = 81
+            self.state = 65
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==11 or _la==12:
-                self.state = 79
+            while _la==7 or _la==8:
+                self.state = 63
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [12]:
-                    self.state = 77
+                if token in [8]:
+                    self.state = 61
                     self.let()
                     pass
-                elif token in [11]:
-                    self.state = 78
+                elif token in [7]:
+                    self.state = 62
                     self.do()
                     pass
                 else:
                     raise NoViableAltException(self)
 
-                self.state = 83
+                self.state = 67
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 84
+            self.state = 68
             self.expr(0)
-            self.state = 85
+            self.state = 69
             self.match(CaskellParser.RightBrace)
         except RecognitionException as re:
             localctx.exception = re
@@ -658,15 +590,15 @@ class CaskellParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_let)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 87
+            self.state = 71
             self.match(CaskellParser.Let)
-            self.state = 88
+            self.state = 72
             self.match(CaskellParser.Identifier)
-            self.state = 89
-            self.match(CaskellParser.T__5)
-            self.state = 90
+            self.state = 73
+            self.match(CaskellParser.T__3)
+            self.state = 74
             self.expr(0)
-            self.state = 91
+            self.state = 75
             self.match(CaskellParser.T__0)
         except RecognitionException as re:
             localctx.exception = re
@@ -715,21 +647,21 @@ class CaskellParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_do)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 93
+            self.state = 77
             self.match(CaskellParser.Do)
-            self.state = 96
+            self.state = 80
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
-                self.state = 94
+                self.state = 78
                 self.match(CaskellParser.Identifier)
-                self.state = 95
+                self.state = 79
                 self.match(CaskellParser.Arrow)
 
 
-            self.state = 98
+            self.state = 82
             self.expr(0)
-            self.state = 99
+            self.state = 83
             self.match(CaskellParser.T__0)
         except RecognitionException as re:
             localctx.exception = re
@@ -762,17 +694,16 @@ class CaskellParser ( Parser ):
             super().__init__(parser)
             self.copyFrom(ctx)
 
-        def FuncIdentifier(self):
-            return self.getToken(CaskellParser.FuncIdentifier, 0)
+        def expr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CaskellParser.ExprContext)
+            else:
+                return self.getTypedRuleContext(CaskellParser.ExprContext,i)
+
         def LeftParen(self):
             return self.getToken(CaskellParser.LeftParen, 0)
         def RightParen(self):
             return self.getToken(CaskellParser.RightParen, 0)
-        def Identifier(self, i:int=None):
-            if i is None:
-                return self.getTokens(CaskellParser.Identifier)
-            else:
-                return self.getToken(CaskellParser.Identifier, i)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitCall" ):
@@ -805,6 +736,12 @@ class CaskellParser ( Parser ):
 
         def Identifier(self):
             return self.getToken(CaskellParser.Identifier, 0)
+        def LeftParen(self):
+            return self.getToken(CaskellParser.LeftParen, 0)
+        def Operator(self):
+            return self.getToken(CaskellParser.Operator, 0)
+        def RightParen(self):
+            return self.getToken(CaskellParser.RightParen, 0)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitIdentifier" ):
@@ -907,6 +844,46 @@ class CaskellParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
+    class SwitchContext(ExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.ExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def Switch(self):
+            return self.getToken(CaskellParser.Switch, 0)
+        def expr(self):
+            return self.getTypedRuleContext(CaskellParser.ExprContext,0)
+
+        def LeftBrace(self):
+            return self.getToken(CaskellParser.LeftBrace, 0)
+        def RightBrace(self):
+            return self.getToken(CaskellParser.RightBrace, 0)
+        def Case(self, i:int=None):
+            if i is None:
+                return self.getTokens(CaskellParser.Case)
+            else:
+                return self.getToken(CaskellParser.Case, i)
+        def pattern(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CaskellParser.PatternContext)
+            else:
+                return self.getTypedRuleContext(CaskellParser.PatternContext,i)
+
+        def block(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CaskellParser.BlockContext)
+            else:
+                return self.getTypedRuleContext(CaskellParser.BlockContext,i)
+
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSwitch" ):
+                return visitor.visitSwitch(self)
+            else:
+                return visitor.visitChildren(self)
+
+
 
     def expr(self, _p:int=0):
         _parentctx = self._ctx
@@ -918,16 +895,16 @@ class CaskellParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 140
+            self.state = 124
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,14,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
             if la_ == 1:
                 localctx = CaskellParser.NumberContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
 
-                self.state = 102
+                self.state = 86
                 self.match(CaskellParser.Number)
                 pass
 
@@ -936,135 +913,185 @@ class CaskellParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 103
+                self.state = 87
                 self.match(CaskellParser.Identifier)
                 pass
 
             elif la_ == 3:
-                localctx = CaskellParser.ParensContext(self, localctx)
+                localctx = CaskellParser.IdentifierContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 104
+                self.state = 88
                 self.match(CaskellParser.LeftParen)
-                self.state = 105
-                self.expr(0)
-                self.state = 106
+                self.state = 89
+                self.match(CaskellParser.Operator)
+                self.state = 90
                 self.match(CaskellParser.RightParen)
                 pass
 
             elif la_ == 4:
-                localctx = CaskellParser.CallContext(self, localctx)
+                localctx = CaskellParser.ParensContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 108
-                self.match(CaskellParser.FuncIdentifier)
-                self.state = 109
+                self.state = 91
                 self.match(CaskellParser.LeftParen)
-                self.state = 110
+                self.state = 92
+                self.expr(0)
+                self.state = 93
                 self.match(CaskellParser.RightParen)
                 pass
 
             elif la_ == 5:
-                localctx = CaskellParser.CallContext(self, localctx)
+                localctx = CaskellParser.TupleContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-
-                self.state = 111
-                self.match(CaskellParser.FuncIdentifier)
-                self.state = 112
+                self.state = 95
                 self.match(CaskellParser.LeftParen)
-                self.state = 121
+                self.state = 96
+                self.expr(0)
+                self.state = 99 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==20:
-                    self.state = 113
-                    self.match(CaskellParser.Identifier)
-                    self.state = 118
+                while True:
+                    self.state = 97
+                    self.match(CaskellParser.T__2)
+                    self.state = 98
+                    self.expr(0)
+                    self.state = 101 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    while _la==5:
-                        self.state = 114
-                        self.match(CaskellParser.T__4)
-                        self.state = 115
-                        self.match(CaskellParser.Identifier)
-                        self.state = 120
-                        self._errHandler.sync(self)
-                        _la = self._input.LA(1)
+                    if not (_la==3):
+                        break
 
-
-
-                self.state = 123
+                self.state = 103
                 self.match(CaskellParser.RightParen)
                 pass
 
             elif la_ == 6:
-                localctx = CaskellParser.TupleContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 124
-                self.match(CaskellParser.LeftParen)
-                self.state = 125
-                self.expr(0)
-                self.state = 128 
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while True:
-                    self.state = 126
-                    self.match(CaskellParser.T__4)
-                    self.state = 127
-                    self.expr(0)
-                    self.state = 130 
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-                    if not (_la==5):
-                        break
-
-                self.state = 132
-                self.match(CaskellParser.RightParen)
-                pass
-
-            elif la_ == 7:
                 localctx = CaskellParser.IfContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 134
+                self.state = 105
                 self.match(CaskellParser.If)
-                self.state = 135
+                self.state = 106
                 self.expr(0)
-                self.state = 136
+                self.state = 107
                 self.block()
-                self.state = 137
+                self.state = 108
                 self.match(CaskellParser.Else)
-                self.state = 138
+                self.state = 109
                 self.block()
+                pass
+
+            elif la_ == 7:
+                localctx = CaskellParser.SwitchContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 111
+                self.match(CaskellParser.Switch)
+                self.state = 112
+                self.expr(0)
+                self.state = 113
+                self.match(CaskellParser.LeftBrace)
+                self.state = 118 
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                while True:
+                    self.state = 114
+                    self.match(CaskellParser.Case)
+                    self.state = 115
+                    self.pattern(0)
+                    self.state = 116
+                    self.block()
+                    self.state = 120 
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+                    if not (_la==12):
+                        break
+
+                self.state = 122
+                self.match(CaskellParser.RightBrace)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
             self.state = 147
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,15,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    localctx = CaskellParser.OperationContext(self, CaskellParser.ExprContext(self, _parentctx, _parentState))
-                    self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                    self.state = 142
-                    if not self.precpred(self._ctx, 8):
-                        from antlr4.error.Errors import FailedPredicateException
-                        raise FailedPredicateException(self, "self.precpred(self._ctx, 8)")
-                    self.state = 143
-                    self.match(CaskellParser.Operator)
-                    self.state = 144
-                    self.expr(9) 
+                    self.state = 145
+                    self._errHandler.sync(self)
+                    la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
+                    if la_ == 1:
+                        localctx = CaskellParser.OperationContext(self, CaskellParser.ExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
+                        self.state = 126
+                        if not self.precpred(self._ctx, 10):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 10)")
+                        self.state = 127
+                        self.match(CaskellParser.Operator)
+                        self.state = 128
+                        self.expr(11)
+                        pass
+
+                    elif la_ == 2:
+                        localctx = CaskellParser.CallContext(self, CaskellParser.ExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
+                        self.state = 129
+                        if not self.precpred(self._ctx, 8):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 8)")
+                        self.state = 130
+                        self.match(CaskellParser.LeftParen)
+                        self.state = 131
+                        self.match(CaskellParser.RightParen)
+                        pass
+
+                    elif la_ == 3:
+                        localctx = CaskellParser.CallContext(self, CaskellParser.ExprContext(self, _parentctx, _parentState))
+                        self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
+                        self.state = 132
+                        if not self.precpred(self._ctx, 7):
+                            from antlr4.error.Errors import FailedPredicateException
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
+                        self.state = 133
+                        self.match(CaskellParser.LeftParen)
+                        self.state = 142
+                        self._errHandler.sync(self)
+                        _la = self._input.LA(1)
+                        if ((_la) & ~0x3f) == 0 and ((1 << _la) & 2755072) != 0:
+                            self.state = 134
+                            self.expr(0)
+                            self.state = 139
+                            self._errHandler.sync(self)
+                            _la = self._input.LA(1)
+                            while _la==3:
+                                self.state = 135
+                                self.match(CaskellParser.T__2)
+                                self.state = 136
+                                self.expr(0)
+                                self.state = 141
+                                self._errHandler.sync(self)
+                                _la = self._input.LA(1)
+
+
+
+                        self.state = 144
+                        self.match(CaskellParser.RightParen)
+                        pass
+
+             
                 self.state = 149
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,15,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1075,368 +1102,298 @@ class CaskellParser ( Parser ):
         return localctx
 
 
-    class StructContext(ParserRuleContext):
+    class PatternContext(ParserRuleContext):
         __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
-
-        def Identifier(self, i:int=None):
-            if i is None:
-                return self.getTokens(CaskellParser.Identifier)
-            else:
-                return self.getToken(CaskellParser.Identifier, i)
-
-        def typeDef(self):
-            return self.getTypedRuleContext(CaskellParser.TypeDefContext,0)
 
 
         def getRuleIndex(self):
-            return CaskellParser.RULE_struct
+            return CaskellParser.RULE_pattern
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStruct" ):
-                return visitor.visitStruct(self)
-            else:
-                return visitor.visitChildren(self)
+     
+        def copyFrom(self, ctx:ParserRuleContext):
+            super().copyFrom(ctx)
 
 
+    class IdentifierPatternContext(PatternContext):
 
-
-    def struct(self):
-
-        localctx = CaskellParser.StructContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_struct)
-        self._la = 0 # Token type
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 150
-            self.match(CaskellParser.Identifier)
-            self.state = 169
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==7:
-                self.state = 151
-                self.match(CaskellParser.T__6)
-                self.state = 152
-                self.match(CaskellParser.Identifier)
-                self.state = 155
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==4:
-                    self.state = 153
-                    self.match(CaskellParser.T__3)
-                    self.state = 154
-                    self.match(CaskellParser.Identifier)
-
-
-                self.state = 165
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while _la==5:
-                    self.state = 157
-                    self.match(CaskellParser.T__4)
-                    self.state = 158
-                    self.match(CaskellParser.Identifier)
-                    self.state = 161
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-                    if _la==4:
-                        self.state = 159
-                        self.match(CaskellParser.T__3)
-                        self.state = 160
-                        self.match(CaskellParser.Identifier)
-
-
-                    self.state = 167
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-
-                self.state = 168
-                self.match(CaskellParser.T__7)
-
-
-            self.state = 171
-            self.typeDef()
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class TypeDefContext(ParserRuleContext):
-        __slots__ = 'parser'
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def Identifier(self, i:int=None):
-            if i is None:
-                return self.getTokens(CaskellParser.Identifier)
-            else:
-                return self.getToken(CaskellParser.Identifier, i)
-
-        def LeftParen(self):
-            return self.getToken(CaskellParser.LeftParen, 0)
-
-        def type_(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(CaskellParser.TypeContext)
-            else:
-                return self.getTypedRuleContext(CaskellParser.TypeContext,i)
-
-
-        def RightParen(self):
-            return self.getToken(CaskellParser.RightParen, 0)
-
-        def LeftBrace(self):
-            return self.getToken(CaskellParser.LeftBrace, 0)
-
-        def RightBrace(self):
-            return self.getToken(CaskellParser.RightBrace, 0)
-
-        def getRuleIndex(self):
-            return CaskellParser.RULE_typeDef
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTypeDef" ):
-                return visitor.visitTypeDef(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def typeDef(self):
-
-        localctx = CaskellParser.TypeDefContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_typeDef)
-        self._la = 0 # Token type
-        try:
-            self.state = 202
-            self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
-            if la_ == 1:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 173
-                self.match(CaskellParser.Identifier)
-                pass
-
-            elif la_ == 2:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 174
-                self.match(CaskellParser.Identifier)
-                self.state = 175
-                self.match(CaskellParser.LeftParen)
-                self.state = 176
-                self.type_(0)
-                self.state = 181
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while _la==5:
-                    self.state = 177
-                    self.match(CaskellParser.T__4)
-                    self.state = 178
-                    self.type_(0)
-                    self.state = 183
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-
-                self.state = 184
-                self.match(CaskellParser.RightParen)
-                pass
-
-            elif la_ == 3:
-                self.enterOuterAlt(localctx, 3)
-                self.state = 186
-                self.match(CaskellParser.Identifier)
-                self.state = 187
-                self.match(CaskellParser.LeftBrace)
-                self.state = 188
-                self.match(CaskellParser.Identifier)
-                self.state = 189
-                self.match(CaskellParser.T__3)
-                self.state = 190
-                self.type_(0)
-                self.state = 197
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while _la==5:
-                    self.state = 191
-                    self.match(CaskellParser.T__4)
-                    self.state = 192
-                    self.match(CaskellParser.Identifier)
-                    self.state = 193
-                    self.match(CaskellParser.T__3)
-                    self.state = 194
-                    self.type_(0)
-                    self.state = 199
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-
-                self.state = 200
-                self.match(CaskellParser.RightBrace)
-                pass
-
-
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class TypeContext(ParserRuleContext):
-        __slots__ = 'parser'
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
 
         def Identifier(self):
             return self.getToken(CaskellParser.Identifier, 0)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIdentifierPattern" ):
+                return visitor.visitIdentifierPattern(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class ParensPatternContext(PatternContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
         def LeftParen(self):
             return self.getToken(CaskellParser.LeftParen, 0)
-
-        def type_(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(CaskellParser.TypeContext)
-            else:
-                return self.getTypedRuleContext(CaskellParser.TypeContext,i)
-
+        def pattern(self):
+            return self.getTypedRuleContext(CaskellParser.PatternContext,0)
 
         def RightParen(self):
             return self.getToken(CaskellParser.RightParen, 0)
 
-        def getRuleIndex(self):
-            return CaskellParser.RULE_type
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParensPattern" ):
+                return visitor.visitParensPattern(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class NumberPatternContext(PatternContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def Number(self):
+            return self.getToken(CaskellParser.Number, 0)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitType" ):
-                return visitor.visitType(self)
+            if hasattr( visitor, "visitNumberPattern" ):
+                return visitor.visitNumberPattern(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class TuplePatternContext(PatternContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def LeftParen(self):
+            return self.getToken(CaskellParser.LeftParen, 0)
+        def pattern(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CaskellParser.PatternContext)
+            else:
+                return self.getTypedRuleContext(CaskellParser.PatternContext,i)
+
+        def RightParen(self):
+            return self.getToken(CaskellParser.RightParen, 0)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTuplePattern" ):
+                return visitor.visitTuplePattern(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class CallPatternContext(PatternContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def Identifier(self):
+            return self.getToken(CaskellParser.Identifier, 0)
+        def LeftParen(self):
+            return self.getToken(CaskellParser.LeftParen, 0)
+        def RightParen(self):
+            return self.getToken(CaskellParser.RightParen, 0)
+        def pattern(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CaskellParser.PatternContext)
+            else:
+                return self.getTypedRuleContext(CaskellParser.PatternContext,i)
+
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitCallPattern" ):
+                return visitor.visitCallPattern(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class IgnorePatternContext(PatternContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIgnorePattern" ):
+                return visitor.visitIgnorePattern(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class OperationPatternContext(PatternContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def pattern(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CaskellParser.PatternContext)
+            else:
+                return self.getTypedRuleContext(CaskellParser.PatternContext,i)
+
+        def Operator(self):
+            return self.getToken(CaskellParser.Operator, 0)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitOperationPattern" ):
+                return visitor.visitOperationPattern(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
-    def type_(self, _p:int=0):
+    def pattern(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
-        localctx = CaskellParser.TypeContext(self, self._ctx, _parentState)
+        localctx = CaskellParser.PatternContext(self, self._ctx, _parentState)
         _prevctx = localctx
-        _startState = 22
-        self.enterRecursionRule(localctx, 22, self.RULE_type, _p)
+        _startState = 18
+        self.enterRecursionRule(localctx, 18, self.RULE_pattern, _p)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 216
+            self.state = 181
             self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [20]:
-                self.state = 205
+            la_ = self._interp.adaptivePredict(self._input,18,self._ctx)
+            if la_ == 1:
+                localctx = CaskellParser.NumberPatternContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+
+
+                self.state = 151
+                self.match(CaskellParser.Number)
+                pass
+
+            elif la_ == 2:
+                localctx = CaskellParser.IdentifierPatternContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+
+                self.state = 152
                 self.match(CaskellParser.Identifier)
                 pass
-            elif token in [25]:
-                self.state = 206
+
+            elif la_ == 3:
+                localctx = CaskellParser.ParensPatternContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+
+                self.state = 153
                 self.match(CaskellParser.LeftParen)
-                self.state = 207
-                self.type_(0)
-                self.state = 210 
+                self.state = 154
+                self.pattern(0)
+                self.state = 155
+                self.match(CaskellParser.RightParen)
+                pass
+
+            elif la_ == 4:
+                localctx = CaskellParser.CallPatternContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+
+                self.state = 157
+                self.match(CaskellParser.Identifier)
+                self.state = 158
+                self.match(CaskellParser.LeftParen)
+                self.state = 167
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if ((_la) & ~0x3f) == 0 and ((1 << _la) & 2752544) != 0:
+                    self.state = 159
+                    self.pattern(0)
+                    self.state = 164
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+                    while _la==3:
+                        self.state = 160
+                        self.match(CaskellParser.T__2)
+                        self.state = 161
+                        self.pattern(0)
+                        self.state = 166
+                        self._errHandler.sync(self)
+                        _la = self._input.LA(1)
+
+
+
+                self.state = 169
+                self.match(CaskellParser.RightParen)
+                pass
+
+            elif la_ == 5:
+                localctx = CaskellParser.TuplePatternContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 170
+                self.match(CaskellParser.LeftParen)
+                self.state = 171
+                self.pattern(0)
+                self.state = 174 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while True:
-                    self.state = 208
-                    self.match(CaskellParser.T__4)
-                    self.state = 209
-                    self.type_(0)
-                    self.state = 212 
+                    self.state = 172
+                    self.match(CaskellParser.T__2)
+                    self.state = 173
+                    self.pattern(0)
+                    self.state = 176 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
-                    if not (_la==5):
+                    if not (_la==3):
                         break
 
-                self.state = 214
+                self.state = 178
                 self.match(CaskellParser.RightParen)
                 pass
-            else:
-                raise NoViableAltException(self)
+
+            elif la_ == 6:
+                localctx = CaskellParser.IgnorePatternContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+
+                self.state = 180
+                self.match(CaskellParser.T__4)
+                pass
+
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 239
+            self.state = 188
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,28,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,19,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 237
-                    self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,27,self._ctx)
-                    if la_ == 1:
-                        localctx = CaskellParser.TypeContext(self, _parentctx, _parentState)
-                        self.pushNewRecursionContext(localctx, _startState, self.RULE_type)
-                        self.state = 218
-                        if not self.precpred(self._ctx, 3):
-                            from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 221 
-                        self._errHandler.sync(self)
-                        _alt = 1
-                        while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                            if _alt == 1:
-                                self.state = 219
-                                self.match(CaskellParser.T__8)
-                                self.state = 220
-                                self.type_(0)
-
-                            else:
-                                raise NoViableAltException(self)
-                            self.state = 223 
-                            self._errHandler.sync(self)
-                            _alt = self._interp.adaptivePredict(self._input,25,self._ctx)
-
-                        pass
-
-                    elif la_ == 2:
-                        localctx = CaskellParser.TypeContext(self, _parentctx, _parentState)
-                        self.pushNewRecursionContext(localctx, _startState, self.RULE_type)
-                        self.state = 225
-                        if not self.precpred(self._ctx, 1):
-                            from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 1)")
-                        self.state = 226
-                        self.match(CaskellParser.T__6)
-                        self.state = 227
-                        self.type_(0)
-                        self.state = 232
-                        self._errHandler.sync(self)
-                        _la = self._input.LA(1)
-                        while _la==5:
-                            self.state = 228
-                            self.match(CaskellParser.T__4)
-                            self.state = 229
-                            self.type_(0)
-                            self.state = 234
-                            self._errHandler.sync(self)
-                            _la = self._input.LA(1)
-
-                        self.state = 235
-                        self.match(CaskellParser.T__7)
-                        pass
-
-             
-                self.state = 241
+                    localctx = CaskellParser.OperationPatternContext(self, CaskellParser.PatternContext(self, _parentctx, _parentState))
+                    self.pushNewRecursionContext(localctx, _startState, self.RULE_pattern)
+                    self.state = 183
+                    if not self.precpred(self._ctx, 7):
+                        from antlr4.error.Errors import FailedPredicateException
+                        raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
+                    self.state = 184
+                    self.match(CaskellParser.Operator)
+                    self.state = 185
+                    self.pattern(8) 
+                self.state = 190
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,28,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,19,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1452,7 +1409,7 @@ class CaskellParser ( Parser ):
         if self._predicates == None:
             self._predicates = dict()
         self._predicates[8] = self.expr_sempred
-        self._predicates[11] = self.type_sempred
+        self._predicates[9] = self.pattern_sempred
         pred = self._predicates.get(ruleIndex, None)
         if pred is None:
             raise Exception("No predicate with index:" + str(ruleIndex))
@@ -1461,16 +1418,20 @@ class CaskellParser ( Parser ):
 
     def expr_sempred(self, localctx:ExprContext, predIndex:int):
             if predIndex == 0:
+                return self.precpred(self._ctx, 10)
+         
+
+            if predIndex == 1:
                 return self.precpred(self._ctx, 8)
          
 
-    def type_sempred(self, localctx:TypeContext, predIndex:int):
-            if predIndex == 1:
-                return self.precpred(self._ctx, 3)
+            if predIndex == 2:
+                return self.precpred(self._ctx, 7)
          
 
-            if predIndex == 2:
-                return self.precpred(self._ctx, 1)
+    def pattern_sempred(self, localctx:PatternContext, predIndex:int):
+            if predIndex == 3:
+                return self.precpred(self._ctx, 7)
          
 
 

@@ -2,6 +2,12 @@ from Data.Char include isDigit;
 from Data.List include findIndex;
 
 struct Shape Circle(Int, Int) | Rectangle(Float, Float);
+
+struct Shape {
+    Circle(Int, Int) | 
+    Rectangle(Float, Float)
+};
+
 struct Shape Circle{
     a: Int,
     b: Int,
@@ -9,6 +15,17 @@ struct Shape Circle{
     a: Float,
     b: Float
 } implementing Show;
+
+struct Shape {
+    Circle{
+        a: Int,
+        b: Int,
+    } | 
+    Rectangle{
+        a: Float,
+        b: Float
+    }
+}implementing Show;
 
 struct Maybe<T: Ord> Nothing | Just(T);
 

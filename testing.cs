@@ -1,11 +1,22 @@
 from Data.Char include isDigit;
 from Data.List include findIndex;
 
-func f(a, b) {
-    let c = 23;
-    c
+func main() {
+    putStrLn(show(f((2 + 2) * 2)))
 }
 
-func main() {
-    return(1)
+func f(8){
+    1
+}
+
+func f(other){
+    if other == 0 {
+        2
+    }else {
+        3
+    }
+}
+
+func g ((x:xs)) {
+    123
 }
