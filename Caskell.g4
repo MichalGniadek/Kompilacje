@@ -10,9 +10,20 @@ include: From includePath Include Identifier ';';
 
 includePath: Identifier ('.' Identifier)*;
 
-func: Func Identifier '(' argList ')' block;
+func: Func Identifier '(' argList ')' ('->' type)? block;
 
-argList: (pattern (',' pattern)*)?;
+argList: 
+	(pattern (',' pattern)*)?
+	| (pattern ':' type (',' pattern ':' type)*);
+
+
+type: 
+	(Identifier)					 	# identyfier
+	| '(' type ')'					 	# typeParens
+	| '(' type (',' type)+ ')'			# typeTuple
+	| type '(' (type (',' type)*)? ')'	# typeCall
+	| '[' type ']'						# typeArray
+	| type '->' type					# typeArrow;
 
 block: '{' (let | do)* expr '}';
 

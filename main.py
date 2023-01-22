@@ -26,6 +26,24 @@ class Visitor(CaskellVisitor):
 
     def visitArgList(self, ctx: CaskellParser.ArgListContext):
         return [c.accept(self) for c in ctx.pattern()]
+    
+    def visitTypeParens(self, ctx: CaskellParser.ParensContext):
+        return f"( {ctx.type().accept(self)} )"
+
+    def visitTypeTuple(self, ctx: CaskellParser.TupleContext):
+        children = [c.accept(self) for c in ctx.type()]
+        return f"({','.join(children)})"
+
+    def visitTypeCall(self, ctx: CaskellParser.CallContext):
+        [func, *args] = [e.accept(self) for e in ctx.type()]
+        return f"({func} ({' '.join(args)}))"
+    
+    def visiTypeArray(self, ctx: CaskellParser.CallContext):
+        return f"[ {ctx.type().accept(self)} ]"
+    
+    def visitTypeArrow(self, ctx: CaskellParser.CallContext):
+        children = [c.accept(self) for c in ctx.type()]
+        return f"({'->'.join(children)})"
 
     def visitBlock(self, ctx: CaskellParser.BlockContext):
         children = [c.accept(self) for c in ctx.getChildren()][1:-1]
