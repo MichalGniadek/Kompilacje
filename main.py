@@ -25,25 +25,29 @@ class Visitor(CaskellVisitor):
         argList = ctx.argList().accept(self)
         if argList is not None:
             types, args = argList[0], argList[1]
-        types = '->'.join(types)
-        args = ' '.join(args)
+        types_str = '->'.join(types)
+        args_str = ' '.join(args)
 
         type_ = ctx.type_()
-        return_type = f"-> {type_.accept(self)}" if type_ is not None else ''
+        return_type = ""
+        if type_ is not None:
+            return_type = str(type_.accept(self))
+            if len(types) != 0:
+                return_type = "-> " + return_type
 
         block = ctx.block().accept(self)
 
         type_line = ""
-        if len(types) == len(args) and return_type:
-            type_line = f"{name} :: {types} {return_type} \n"
+        if len(types) == len(args) and return_type != "":
+            type_line = f"{name} :: {types_str} {return_type} \n"
         elif return_type == '' and len(types) != 0:
-            print(f"error at {ctx.getSourceInterval()}, function {name}:\n" + 
-                "\tyou can't provide parameter types without specyfing the return type", file=sys.stderr)
+            print(f"error at {ctx.getSourceInterval()}, function {name}:\n" +
+                  "\tyou can't provide parameter types without specyfing the return type", file=sys.stderr)
         elif return_type != '' and len(types) == 0 and len(args) != 0:
             print(f"error at {ctx.getSourceInterval()}, function {name}:\n" +
-                "\tyou can't return type without specyfing the parameter type", file=sys.stderr)
+                  "\tyou can't return type without specyfing the parameter type", file=sys.stderr)
 
-        return f"{type_line}{name} {args} = {block}"
+        return f"{type_line}{name} {args_str} = {block}"
 
     def visitArgList(self, ctx: CaskellParser.ArgListContext):
         return ([c.accept(self) for c in ctx.type_()], [c.accept(self) for c in ctx.pattern()])
@@ -62,7 +66,7 @@ class Visitor(CaskellVisitor):
         [func, *args] = [e.accept(self) for e in ctx.type_()]
         return f"({func} ({' '.join(args)}))"
 
-    def visiTypeArray(self, ctx: CaskellParser.CallContext):
+    def visitTypeArray(self, ctx: CaskellParser.CallContext):
         return f"[ {ctx.type_().accept(self)} ]"
 
     def visitTypeArrow(self, ctx: CaskellParser.CallContext):
@@ -99,6 +103,10 @@ class Visitor(CaskellVisitor):
     def visitParens(self, ctx: CaskellParser.ParensContext):
         return f"( {ctx.expr().accept(self)} )"
 
+    def visitArray(self, ctx: CaskellParser.ArrayContext):
+        children = [c.accept(self) for c in ctx.expr()]
+        return f"[{','.join(children)}]"
+
     def visitIf(self, ctx: CaskellParser.IfContext):
         cond = ctx.expr().accept(self)
         [ifTrue, ifFalse] = [c.accept(self) for c in ctx.block()]
@@ -120,6 +128,10 @@ class Visitor(CaskellVisitor):
     def visitTuplePattern(self, ctx: CaskellParser.TuplePatternContext):
         children = [c.accept(self) for c in ctx.pattern()]
         return f"({','.join(children)})"
+
+    def visitArrayPattern(self, ctx: CaskellParser.TuplePatternContext):
+        children = [c.accept(self) for c in ctx.pattern()]
+        return f"[{','.join(children)}]"
 
     def visitCallPattern(self, ctx: CaskellParser.CallPatternContext):
         args = [e.accept(self) for e in ctx.pattern()]

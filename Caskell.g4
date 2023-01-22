@@ -14,7 +14,7 @@ func: Func Identifier '(' argList ')' ('->' type)? block;
 
 argList:
 	(pattern (',' pattern)*)?
-	| (pattern ':' type (',' pattern ':' type)*);
+	| (pattern '::' type (',' pattern '::' type)*);
 
 type:
 	(Identifier)						# typeIdentifier
@@ -38,6 +38,8 @@ expr:
 	| ('(' Operator ')')						# identifier
 	| ('(' expr ')')							# parens
 	| '(' expr (',' expr)+ ')'					# tuple
+	| '[' ']'									# array
+	| '[' expr (',' expr)* ']'					# array
 	| (If expr block Else block)				# if
 	| Switch expr '{' (Case pattern block)+ '}'	# switch;
 
@@ -48,7 +50,9 @@ pattern:
 	| ('(' pattern ')')									# parensPattern
 	| (Identifier '(' (pattern (',' pattern)*)? ')')	# callPattern
 	| '(' pattern (',' pattern)+ ')'					# tuplePattern
-	| ('_')												# ignorePattern;
+	| ('_')												# ignorePattern
+	| '[' ']'											# arrayPattern
+	| '[' pattern (',' pattern)* ']'					# arrayPattern;
 
 /*
  * Lexer Rules

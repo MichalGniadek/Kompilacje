@@ -104,6 +104,11 @@ class CaskellVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CaskellParser#array.
+    def visitArray(self, ctx:CaskellParser.ArrayContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CaskellParser#if.
     def visitIf(self, ctx:CaskellParser.IfContext):
         return self.visitChildren(ctx)
@@ -146,6 +151,11 @@ class CaskellVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by CaskellParser#ignorePattern.
     def visitIgnorePattern(self, ctx:CaskellParser.IgnorePatternContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CaskellParser#arrayPattern.
+    def visitArrayPattern(self, ctx:CaskellParser.ArrayPatternContext):
         return self.visitChildren(ctx)
 
 

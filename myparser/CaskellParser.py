@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,27,256,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,27,282,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,1,0,1,0,5,0,25,8,0,10,0,12,0,
         28,9,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,2,5,2,41,8,2,10,
         2,12,2,44,9,2,1,3,1,3,1,3,1,3,1,3,1,3,1,3,3,3,53,8,3,1,3,1,3,1,4,
@@ -22,85 +22,96 @@ def serializedATN():
         9,5,1,6,1,6,1,6,5,6,128,8,6,10,6,12,6,131,9,6,1,6,1,6,1,6,1,7,1,
         7,1,7,1,7,1,7,1,7,1,8,1,8,1,8,3,8,145,8,8,1,8,1,8,1,8,1,9,1,9,1,
         9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,4,9,164,8,9,11,9,12,
-        9,165,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,
-        9,4,9,183,8,9,11,9,12,9,184,1,9,1,9,3,9,189,8,9,1,9,1,9,1,9,1,9,
-        1,9,1,9,1,9,1,9,1,9,1,9,1,9,5,9,202,8,9,10,9,12,9,205,9,9,3,9,207,
-        8,9,1,9,5,9,210,8,9,10,9,12,9,213,9,9,1,10,1,10,1,10,1,10,1,10,1,
-        10,1,10,1,10,1,10,1,10,1,10,1,10,5,10,227,8,10,10,10,12,10,230,9,
-        10,3,10,232,8,10,1,10,1,10,1,10,1,10,1,10,4,10,239,8,10,11,10,12,
-        10,240,1,10,1,10,1,10,3,10,246,8,10,1,10,1,10,1,10,5,10,251,8,10,
-        10,10,12,10,254,9,10,1,10,0,3,10,18,20,11,0,2,4,6,8,10,12,14,16,
-        18,20,0,0,285,0,26,1,0,0,0,2,31,1,0,0,0,4,37,1,0,0,0,6,45,1,0,0,
-        0,8,79,1,0,0,0,10,101,1,0,0,0,12,124,1,0,0,0,14,135,1,0,0,0,16,141,
-        1,0,0,0,18,188,1,0,0,0,20,245,1,0,0,0,22,25,3,2,1,0,23,25,3,6,3,
-        0,24,22,1,0,0,0,24,23,1,0,0,0,25,28,1,0,0,0,26,24,1,0,0,0,26,27,
-        1,0,0,0,27,29,1,0,0,0,28,26,1,0,0,0,29,30,5,0,0,1,30,1,1,0,0,0,31,
-        32,5,16,0,0,32,33,3,4,2,0,33,34,5,17,0,0,34,35,5,18,0,0,35,36,5,
-        1,0,0,36,3,1,0,0,0,37,42,5,18,0,0,38,39,5,2,0,0,39,41,5,18,0,0,40,
-        38,1,0,0,0,41,44,1,0,0,0,42,40,1,0,0,0,42,43,1,0,0,0,43,5,1,0,0,
-        0,44,42,1,0,0,0,45,46,5,8,0,0,46,47,5,18,0,0,47,48,5,22,0,0,48,49,
-        3,8,4,0,49,52,5,23,0,0,50,51,5,3,0,0,51,53,3,10,5,0,52,50,1,0,0,
-        0,52,53,1,0,0,0,53,54,1,0,0,0,54,55,3,12,6,0,55,7,1,0,0,0,56,61,
-        3,20,10,0,57,58,5,4,0,0,58,60,3,20,10,0,59,57,1,0,0,0,60,63,1,0,
-        0,0,61,59,1,0,0,0,61,62,1,0,0,0,62,65,1,0,0,0,63,61,1,0,0,0,64,56,
-        1,0,0,0,64,65,1,0,0,0,65,80,1,0,0,0,66,67,3,20,10,0,67,68,5,5,0,
-        0,68,76,3,10,5,0,69,70,5,4,0,0,70,71,3,20,10,0,71,72,5,5,0,0,72,
-        73,3,10,5,0,73,75,1,0,0,0,74,69,1,0,0,0,75,78,1,0,0,0,76,74,1,0,
-        0,0,76,77,1,0,0,0,77,80,1,0,0,0,78,76,1,0,0,0,79,64,1,0,0,0,79,66,
-        1,0,0,0,80,9,1,0,0,0,81,82,6,5,-1,0,82,102,5,18,0,0,83,84,5,22,0,
-        0,84,85,3,10,5,0,85,86,5,23,0,0,86,102,1,0,0,0,87,88,5,22,0,0,88,
-        91,3,10,5,0,89,90,5,4,0,0,90,92,3,10,5,0,91,89,1,0,0,0,92,93,1,0,
-        0,0,93,91,1,0,0,0,93,94,1,0,0,0,94,95,1,0,0,0,95,96,5,23,0,0,96,
-        102,1,0,0,0,97,98,5,26,0,0,98,99,3,10,5,0,99,100,5,27,0,0,100,102,
-        1,0,0,0,101,81,1,0,0,0,101,83,1,0,0,0,101,87,1,0,0,0,101,97,1,0,
-        0,0,102,121,1,0,0,0,103,104,10,1,0,0,104,105,5,3,0,0,105,120,3,10,
-        5,2,106,107,10,3,0,0,107,116,5,22,0,0,108,113,3,10,5,0,109,110,5,
-        4,0,0,110,112,3,10,5,0,111,109,1,0,0,0,112,115,1,0,0,0,113,111,1,
-        0,0,0,113,114,1,0,0,0,114,117,1,0,0,0,115,113,1,0,0,0,116,108,1,
-        0,0,0,116,117,1,0,0,0,117,118,1,0,0,0,118,120,5,23,0,0,119,103,1,
-        0,0,0,119,106,1,0,0,0,120,123,1,0,0,0,121,119,1,0,0,0,121,122,1,
-        0,0,0,122,11,1,0,0,0,123,121,1,0,0,0,124,129,5,24,0,0,125,128,3,
-        14,7,0,126,128,3,16,8,0,127,125,1,0,0,0,127,126,1,0,0,0,128,131,
-        1,0,0,0,129,127,1,0,0,0,129,130,1,0,0,0,130,132,1,0,0,0,131,129,
-        1,0,0,0,132,133,3,18,9,0,133,134,5,25,0,0,134,13,1,0,0,0,135,136,
-        5,10,0,0,136,137,5,18,0,0,137,138,5,6,0,0,138,139,3,18,9,0,139,140,
-        5,1,0,0,140,15,1,0,0,0,141,144,5,9,0,0,142,143,5,18,0,0,143,145,
-        5,15,0,0,144,142,1,0,0,0,144,145,1,0,0,0,145,146,1,0,0,0,146,147,
-        3,18,9,0,147,148,5,1,0,0,148,17,1,0,0,0,149,150,6,9,-1,0,150,189,
-        5,20,0,0,151,189,5,18,0,0,152,153,5,22,0,0,153,154,5,19,0,0,154,
-        189,5,23,0,0,155,156,5,22,0,0,156,157,3,18,9,0,157,158,5,23,0,0,
-        158,189,1,0,0,0,159,160,5,22,0,0,160,163,3,18,9,0,161,162,5,4,0,
-        0,162,164,3,18,9,0,163,161,1,0,0,0,164,165,1,0,0,0,165,163,1,0,0,
-        0,165,166,1,0,0,0,166,167,1,0,0,0,167,168,5,23,0,0,168,189,1,0,0,
-        0,169,170,5,11,0,0,170,171,3,18,9,0,171,172,3,12,6,0,172,173,5,12,
-        0,0,173,174,3,12,6,0,174,189,1,0,0,0,175,176,5,13,0,0,176,177,3,
-        18,9,0,177,182,5,24,0,0,178,179,5,14,0,0,179,180,3,20,10,0,180,181,
-        3,12,6,0,181,183,1,0,0,0,182,178,1,0,0,0,183,184,1,0,0,0,184,182,
-        1,0,0,0,184,185,1,0,0,0,185,186,1,0,0,0,186,187,5,25,0,0,187,189,
-        1,0,0,0,188,149,1,0,0,0,188,151,1,0,0,0,188,152,1,0,0,0,188,155,
-        1,0,0,0,188,159,1,0,0,0,188,169,1,0,0,0,188,175,1,0,0,0,189,211,
-        1,0,0,0,190,191,10,10,0,0,191,192,5,19,0,0,192,210,3,18,9,11,193,
-        194,10,8,0,0,194,195,5,22,0,0,195,210,5,23,0,0,196,197,10,7,0,0,
-        197,206,5,22,0,0,198,203,3,18,9,0,199,200,5,4,0,0,200,202,3,18,9,
-        0,201,199,1,0,0,0,202,205,1,0,0,0,203,201,1,0,0,0,203,204,1,0,0,
-        0,204,207,1,0,0,0,205,203,1,0,0,0,206,198,1,0,0,0,206,207,1,0,0,
-        0,207,208,1,0,0,0,208,210,5,23,0,0,209,190,1,0,0,0,209,193,1,0,0,
-        0,209,196,1,0,0,0,210,213,1,0,0,0,211,209,1,0,0,0,211,212,1,0,0,
-        0,212,19,1,0,0,0,213,211,1,0,0,0,214,215,6,10,-1,0,215,246,5,20,
-        0,0,216,246,5,18,0,0,217,218,5,22,0,0,218,219,3,20,10,0,219,220,
-        5,23,0,0,220,246,1,0,0,0,221,222,5,18,0,0,222,231,5,22,0,0,223,228,
-        3,20,10,0,224,225,5,4,0,0,225,227,3,20,10,0,226,224,1,0,0,0,227,
-        230,1,0,0,0,228,226,1,0,0,0,228,229,1,0,0,0,229,232,1,0,0,0,230,
-        228,1,0,0,0,231,223,1,0,0,0,231,232,1,0,0,0,232,233,1,0,0,0,233,
-        246,5,23,0,0,234,235,5,22,0,0,235,238,3,20,10,0,236,237,5,4,0,0,
-        237,239,3,20,10,0,238,236,1,0,0,0,239,240,1,0,0,0,240,238,1,0,0,
-        0,240,241,1,0,0,0,241,242,1,0,0,0,242,243,5,23,0,0,243,246,1,0,0,
-        0,244,246,5,7,0,0,245,214,1,0,0,0,245,216,1,0,0,0,245,217,1,0,0,
-        0,245,221,1,0,0,0,245,234,1,0,0,0,245,244,1,0,0,0,246,252,1,0,0,
-        0,247,248,10,7,0,0,248,249,5,19,0,0,249,251,3,20,10,8,250,247,1,
-        0,0,0,251,254,1,0,0,0,252,250,1,0,0,0,252,253,1,0,0,0,253,21,1,0,
-        0,0,254,252,1,0,0,0,29,24,26,42,52,61,64,76,79,93,101,113,116,119,
-        121,127,129,144,165,184,188,203,206,209,211,228,231,240,245,252
+        9,165,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,5,9,176,8,9,10,9,12,9,179,
+        9,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,
+        4,9,196,8,9,11,9,12,9,197,1,9,1,9,3,9,202,8,9,1,9,1,9,1,9,1,9,1,
+        9,1,9,1,9,1,9,1,9,1,9,1,9,5,9,215,8,9,10,9,12,9,218,9,9,3,9,220,
+        8,9,1,9,5,9,223,8,9,10,9,12,9,226,9,9,1,10,1,10,1,10,1,10,1,10,1,
+        10,1,10,1,10,1,10,1,10,1,10,1,10,5,10,240,8,10,10,10,12,10,243,9,
+        10,3,10,245,8,10,1,10,1,10,1,10,1,10,1,10,4,10,252,8,10,11,10,12,
+        10,253,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,10,5,10,265,8,10,
+        10,10,12,10,268,9,10,1,10,1,10,3,10,272,8,10,1,10,1,10,1,10,5,10,
+        277,8,10,10,10,12,10,280,9,10,1,10,0,3,10,18,20,11,0,2,4,6,8,10,
+        12,14,16,18,20,0,0,317,0,26,1,0,0,0,2,31,1,0,0,0,4,37,1,0,0,0,6,
+        45,1,0,0,0,8,79,1,0,0,0,10,101,1,0,0,0,12,124,1,0,0,0,14,135,1,0,
+        0,0,16,141,1,0,0,0,18,201,1,0,0,0,20,271,1,0,0,0,22,25,3,2,1,0,23,
+        25,3,6,3,0,24,22,1,0,0,0,24,23,1,0,0,0,25,28,1,0,0,0,26,24,1,0,0,
+        0,26,27,1,0,0,0,27,29,1,0,0,0,28,26,1,0,0,0,29,30,5,0,0,1,30,1,1,
+        0,0,0,31,32,5,16,0,0,32,33,3,4,2,0,33,34,5,17,0,0,34,35,5,18,0,0,
+        35,36,5,1,0,0,36,3,1,0,0,0,37,42,5,18,0,0,38,39,5,2,0,0,39,41,5,
+        18,0,0,40,38,1,0,0,0,41,44,1,0,0,0,42,40,1,0,0,0,42,43,1,0,0,0,43,
+        5,1,0,0,0,44,42,1,0,0,0,45,46,5,8,0,0,46,47,5,18,0,0,47,48,5,22,
+        0,0,48,49,3,8,4,0,49,52,5,23,0,0,50,51,5,3,0,0,51,53,3,10,5,0,52,
+        50,1,0,0,0,52,53,1,0,0,0,53,54,1,0,0,0,54,55,3,12,6,0,55,7,1,0,0,
+        0,56,61,3,20,10,0,57,58,5,4,0,0,58,60,3,20,10,0,59,57,1,0,0,0,60,
+        63,1,0,0,0,61,59,1,0,0,0,61,62,1,0,0,0,62,65,1,0,0,0,63,61,1,0,0,
+        0,64,56,1,0,0,0,64,65,1,0,0,0,65,80,1,0,0,0,66,67,3,20,10,0,67,68,
+        5,5,0,0,68,76,3,10,5,0,69,70,5,4,0,0,70,71,3,20,10,0,71,72,5,5,0,
+        0,72,73,3,10,5,0,73,75,1,0,0,0,74,69,1,0,0,0,75,78,1,0,0,0,76,74,
+        1,0,0,0,76,77,1,0,0,0,77,80,1,0,0,0,78,76,1,0,0,0,79,64,1,0,0,0,
+        79,66,1,0,0,0,80,9,1,0,0,0,81,82,6,5,-1,0,82,102,5,18,0,0,83,84,
+        5,22,0,0,84,85,3,10,5,0,85,86,5,23,0,0,86,102,1,0,0,0,87,88,5,22,
+        0,0,88,91,3,10,5,0,89,90,5,4,0,0,90,92,3,10,5,0,91,89,1,0,0,0,92,
+        93,1,0,0,0,93,91,1,0,0,0,93,94,1,0,0,0,94,95,1,0,0,0,95,96,5,23,
+        0,0,96,102,1,0,0,0,97,98,5,26,0,0,98,99,3,10,5,0,99,100,5,27,0,0,
+        100,102,1,0,0,0,101,81,1,0,0,0,101,83,1,0,0,0,101,87,1,0,0,0,101,
+        97,1,0,0,0,102,121,1,0,0,0,103,104,10,1,0,0,104,105,5,3,0,0,105,
+        120,3,10,5,2,106,107,10,3,0,0,107,116,5,22,0,0,108,113,3,10,5,0,
+        109,110,5,4,0,0,110,112,3,10,5,0,111,109,1,0,0,0,112,115,1,0,0,0,
+        113,111,1,0,0,0,113,114,1,0,0,0,114,117,1,0,0,0,115,113,1,0,0,0,
+        116,108,1,0,0,0,116,117,1,0,0,0,117,118,1,0,0,0,118,120,5,23,0,0,
+        119,103,1,0,0,0,119,106,1,0,0,0,120,123,1,0,0,0,121,119,1,0,0,0,
+        121,122,1,0,0,0,122,11,1,0,0,0,123,121,1,0,0,0,124,129,5,24,0,0,
+        125,128,3,14,7,0,126,128,3,16,8,0,127,125,1,0,0,0,127,126,1,0,0,
+        0,128,131,1,0,0,0,129,127,1,0,0,0,129,130,1,0,0,0,130,132,1,0,0,
+        0,131,129,1,0,0,0,132,133,3,18,9,0,133,134,5,25,0,0,134,13,1,0,0,
+        0,135,136,5,10,0,0,136,137,5,18,0,0,137,138,5,6,0,0,138,139,3,18,
+        9,0,139,140,5,1,0,0,140,15,1,0,0,0,141,144,5,9,0,0,142,143,5,18,
+        0,0,143,145,5,15,0,0,144,142,1,0,0,0,144,145,1,0,0,0,145,146,1,0,
+        0,0,146,147,3,18,9,0,147,148,5,1,0,0,148,17,1,0,0,0,149,150,6,9,
+        -1,0,150,202,5,20,0,0,151,202,5,18,0,0,152,153,5,22,0,0,153,154,
+        5,19,0,0,154,202,5,23,0,0,155,156,5,22,0,0,156,157,3,18,9,0,157,
+        158,5,23,0,0,158,202,1,0,0,0,159,160,5,22,0,0,160,163,3,18,9,0,161,
+        162,5,4,0,0,162,164,3,18,9,0,163,161,1,0,0,0,164,165,1,0,0,0,165,
+        163,1,0,0,0,165,166,1,0,0,0,166,167,1,0,0,0,167,168,5,23,0,0,168,
+        202,1,0,0,0,169,170,5,26,0,0,170,202,5,27,0,0,171,172,5,26,0,0,172,
+        177,3,18,9,0,173,174,5,4,0,0,174,176,3,18,9,0,175,173,1,0,0,0,176,
+        179,1,0,0,0,177,175,1,0,0,0,177,178,1,0,0,0,178,180,1,0,0,0,179,
+        177,1,0,0,0,180,181,5,27,0,0,181,202,1,0,0,0,182,183,5,11,0,0,183,
+        184,3,18,9,0,184,185,3,12,6,0,185,186,5,12,0,0,186,187,3,12,6,0,
+        187,202,1,0,0,0,188,189,5,13,0,0,189,190,3,18,9,0,190,195,5,24,0,
+        0,191,192,5,14,0,0,192,193,3,20,10,0,193,194,3,12,6,0,194,196,1,
+        0,0,0,195,191,1,0,0,0,196,197,1,0,0,0,197,195,1,0,0,0,197,198,1,
+        0,0,0,198,199,1,0,0,0,199,200,5,25,0,0,200,202,1,0,0,0,201,149,1,
+        0,0,0,201,151,1,0,0,0,201,152,1,0,0,0,201,155,1,0,0,0,201,159,1,
+        0,0,0,201,169,1,0,0,0,201,171,1,0,0,0,201,182,1,0,0,0,201,188,1,
+        0,0,0,202,224,1,0,0,0,203,204,10,12,0,0,204,205,5,19,0,0,205,223,
+        3,18,9,13,206,207,10,10,0,0,207,208,5,22,0,0,208,223,5,23,0,0,209,
+        210,10,9,0,0,210,219,5,22,0,0,211,216,3,18,9,0,212,213,5,4,0,0,213,
+        215,3,18,9,0,214,212,1,0,0,0,215,218,1,0,0,0,216,214,1,0,0,0,216,
+        217,1,0,0,0,217,220,1,0,0,0,218,216,1,0,0,0,219,211,1,0,0,0,219,
+        220,1,0,0,0,220,221,1,0,0,0,221,223,5,23,0,0,222,203,1,0,0,0,222,
+        206,1,0,0,0,222,209,1,0,0,0,223,226,1,0,0,0,224,222,1,0,0,0,224,
+        225,1,0,0,0,225,19,1,0,0,0,226,224,1,0,0,0,227,228,6,10,-1,0,228,
+        272,5,20,0,0,229,272,5,18,0,0,230,231,5,22,0,0,231,232,3,20,10,0,
+        232,233,5,23,0,0,233,272,1,0,0,0,234,235,5,18,0,0,235,244,5,22,0,
+        0,236,241,3,20,10,0,237,238,5,4,0,0,238,240,3,20,10,0,239,237,1,
+        0,0,0,240,243,1,0,0,0,241,239,1,0,0,0,241,242,1,0,0,0,242,245,1,
+        0,0,0,243,241,1,0,0,0,244,236,1,0,0,0,244,245,1,0,0,0,245,246,1,
+        0,0,0,246,272,5,23,0,0,247,248,5,22,0,0,248,251,3,20,10,0,249,250,
+        5,4,0,0,250,252,3,20,10,0,251,249,1,0,0,0,252,253,1,0,0,0,253,251,
+        1,0,0,0,253,254,1,0,0,0,254,255,1,0,0,0,255,256,5,23,0,0,256,272,
+        1,0,0,0,257,272,5,7,0,0,258,259,5,26,0,0,259,272,5,27,0,0,260,261,
+        5,26,0,0,261,266,3,20,10,0,262,263,5,4,0,0,263,265,3,20,10,0,264,
+        262,1,0,0,0,265,268,1,0,0,0,266,264,1,0,0,0,266,267,1,0,0,0,267,
+        269,1,0,0,0,268,266,1,0,0,0,269,270,5,27,0,0,270,272,1,0,0,0,271,
+        227,1,0,0,0,271,229,1,0,0,0,271,230,1,0,0,0,271,234,1,0,0,0,271,
+        247,1,0,0,0,271,257,1,0,0,0,271,258,1,0,0,0,271,260,1,0,0,0,272,
+        278,1,0,0,0,273,274,10,9,0,0,274,275,5,19,0,0,275,277,3,20,10,10,
+        276,273,1,0,0,0,277,280,1,0,0,0,278,276,1,0,0,0,278,279,1,0,0,0,
+        279,21,1,0,0,0,280,278,1,0,0,0,31,24,26,42,52,61,64,76,79,93,101,
+        113,116,119,121,127,129,144,165,177,197,201,216,219,222,224,241,
+        244,253,266,271,278
     ]
 
 class CaskellParser ( Parser ):
@@ -113,7 +124,7 @@ class CaskellParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "';'", "'.'", "'->'", "','", "':'", "'='", 
+    literalNames = [ "<INVALID>", "';'", "'.'", "'->'", "','", "'::'", "'='", 
                      "'_'", "'func'", "'do'", "'let'", "'if'", "'else'", 
                      "'switch'", "'case'", "'<-'", "'from'", "'include'", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
@@ -495,7 +506,7 @@ class CaskellParser ( Parser ):
                 self.state = 64
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((_la) & ~0x3f) == 0 and ((1 << _la) & 5505152) != 0:
+                if ((_la) & ~0x3f) == 0 and ((1 << _la) & 72614016) != 0:
                     self.state = 56
                     self.pattern(0)
                     self.state = 61
@@ -1166,6 +1177,30 @@ class CaskellParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
+    class ArrayContext(ExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.ExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def LeftBracket(self):
+            return self.getToken(CaskellParser.LeftBracket, 0)
+        def RightBracket(self):
+            return self.getToken(CaskellParser.RightBracket, 0)
+        def expr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CaskellParser.ExprContext)
+            else:
+                return self.getTypedRuleContext(CaskellParser.ExprContext,i)
+
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitArray" ):
+                return visitor.visitArray(self)
+            else:
+                return visitor.visitChildren(self)
+
+
     class IfContext(ExprContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.ExprContext
@@ -1266,9 +1301,9 @@ class CaskellParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 188
+            self.state = 201
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,19,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,20,self._ctx)
             if la_ == 1:
                 localctx = CaskellParser.NumberContext(self, localctx)
                 self._ctx = localctx
@@ -1341,128 +1376,162 @@ class CaskellParser ( Parser ):
                 pass
 
             elif la_ == 6:
+                localctx = CaskellParser.ArrayContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 169
+                self.match(CaskellParser.LeftBracket)
+                self.state = 170
+                self.match(CaskellParser.RightBracket)
+                pass
+
+            elif la_ == 7:
+                localctx = CaskellParser.ArrayContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 171
+                self.match(CaskellParser.LeftBracket)
+                self.state = 172
+                self.expr(0)
+                self.state = 177
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                while _la==4:
+                    self.state = 173
+                    self.match(CaskellParser.T__3)
+                    self.state = 174
+                    self.expr(0)
+                    self.state = 179
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+
+                self.state = 180
+                self.match(CaskellParser.RightBracket)
+                pass
+
+            elif la_ == 8:
                 localctx = CaskellParser.IfContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 169
+                self.state = 182
                 self.match(CaskellParser.If)
-                self.state = 170
+                self.state = 183
                 self.expr(0)
-                self.state = 171
+                self.state = 184
                 self.block()
-                self.state = 172
+                self.state = 185
                 self.match(CaskellParser.Else)
-                self.state = 173
+                self.state = 186
                 self.block()
                 pass
 
-            elif la_ == 7:
+            elif la_ == 9:
                 localctx = CaskellParser.SwitchContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 175
+                self.state = 188
                 self.match(CaskellParser.Switch)
-                self.state = 176
+                self.state = 189
                 self.expr(0)
-                self.state = 177
+                self.state = 190
                 self.match(CaskellParser.LeftBrace)
-                self.state = 182 
+                self.state = 195 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while True:
-                    self.state = 178
+                    self.state = 191
                     self.match(CaskellParser.Case)
-                    self.state = 179
+                    self.state = 192
                     self.pattern(0)
-                    self.state = 180
+                    self.state = 193
                     self.block()
-                    self.state = 184 
+                    self.state = 197 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
                     if not (_la==14):
                         break
 
-                self.state = 186
+                self.state = 199
                 self.match(CaskellParser.RightBrace)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 211
+            self.state = 224
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,23,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,24,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 209
+                    self.state = 222
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,23,self._ctx)
                     if la_ == 1:
                         localctx = CaskellParser.OperationContext(self, CaskellParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 190
-                        if not self.precpred(self._ctx, 10):
+                        self.state = 203
+                        if not self.precpred(self._ctx, 12):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 10)")
-                        self.state = 191
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 12)")
+                        self.state = 204
                         self.match(CaskellParser.Operator)
-                        self.state = 192
-                        self.expr(11)
+                        self.state = 205
+                        self.expr(13)
                         pass
 
                     elif la_ == 2:
                         localctx = CaskellParser.CallContext(self, CaskellParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 193
-                        if not self.precpred(self._ctx, 8):
+                        self.state = 206
+                        if not self.precpred(self._ctx, 10):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 8)")
-                        self.state = 194
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 10)")
+                        self.state = 207
                         self.match(CaskellParser.LeftParen)
-                        self.state = 195
+                        self.state = 208
                         self.match(CaskellParser.RightParen)
                         pass
 
                     elif la_ == 3:
                         localctx = CaskellParser.CallContext(self, CaskellParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 196
-                        if not self.precpred(self._ctx, 7):
+                        self.state = 209
+                        if not self.precpred(self._ctx, 9):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
-                        self.state = 197
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 9)")
+                        self.state = 210
                         self.match(CaskellParser.LeftParen)
-                        self.state = 206
+                        self.state = 219
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
-                        if ((_la) & ~0x3f) == 0 and ((1 << _la) & 5515264) != 0:
-                            self.state = 198
+                        if ((_la) & ~0x3f) == 0 and ((1 << _la) & 72624128) != 0:
+                            self.state = 211
                             self.expr(0)
-                            self.state = 203
+                            self.state = 216
                             self._errHandler.sync(self)
                             _la = self._input.LA(1)
                             while _la==4:
-                                self.state = 199
+                                self.state = 212
                                 self.match(CaskellParser.T__3)
-                                self.state = 200
+                                self.state = 213
                                 self.expr(0)
-                                self.state = 205
+                                self.state = 218
                                 self._errHandler.sync(self)
                                 _la = self._input.LA(1)
 
 
 
-                        self.state = 208
+                        self.state = 221
                         self.match(CaskellParser.RightParen)
                         pass
 
              
-                self.state = 213
+                self.state = 226
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,23,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,24,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1606,6 +1675,30 @@ class CaskellParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
+    class ArrayPatternContext(PatternContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def LeftBracket(self):
+            return self.getToken(CaskellParser.LeftBracket, 0)
+        def RightBracket(self):
+            return self.getToken(CaskellParser.RightBracket, 0)
+        def pattern(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(CaskellParser.PatternContext)
+            else:
+                return self.getTypedRuleContext(CaskellParser.PatternContext,i)
+
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitArrayPattern" ):
+                return visitor.visitArrayPattern(self)
+            else:
+                return visitor.visitChildren(self)
+
+
     class OperationPatternContext(PatternContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a CaskellParser.PatternContext
@@ -1639,16 +1732,16 @@ class CaskellParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 245
+            self.state = 271
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,27,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,29,self._ctx)
             if la_ == 1:
                 localctx = CaskellParser.NumberPatternContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
 
-                self.state = 215
+                self.state = 228
                 self.match(CaskellParser.Number)
                 pass
 
@@ -1657,7 +1750,7 @@ class CaskellParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 216
+                self.state = 229
                 self.match(CaskellParser.Identifier)
                 pass
 
@@ -1666,11 +1759,11 @@ class CaskellParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 217
+                self.state = 230
                 self.match(CaskellParser.LeftParen)
-                self.state = 218
+                self.state = 231
                 self.pattern(0)
-                self.state = 219
+                self.state = 232
                 self.match(CaskellParser.RightParen)
                 pass
 
@@ -1679,31 +1772,31 @@ class CaskellParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 221
+                self.state = 234
                 self.match(CaskellParser.Identifier)
-                self.state = 222
+                self.state = 235
                 self.match(CaskellParser.LeftParen)
-                self.state = 231
+                self.state = 244
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if ((_la) & ~0x3f) == 0 and ((1 << _la) & 5505152) != 0:
-                    self.state = 223
+                if ((_la) & ~0x3f) == 0 and ((1 << _la) & 72614016) != 0:
+                    self.state = 236
                     self.pattern(0)
-                    self.state = 228
+                    self.state = 241
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
                     while _la==4:
-                        self.state = 224
+                        self.state = 237
                         self.match(CaskellParser.T__3)
-                        self.state = 225
+                        self.state = 238
                         self.pattern(0)
-                        self.state = 230
+                        self.state = 243
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
 
 
 
-                self.state = 233
+                self.state = 246
                 self.match(CaskellParser.RightParen)
                 pass
 
@@ -1711,25 +1804,25 @@ class CaskellParser ( Parser ):
                 localctx = CaskellParser.TuplePatternContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 234
+                self.state = 247
                 self.match(CaskellParser.LeftParen)
-                self.state = 235
+                self.state = 248
                 self.pattern(0)
-                self.state = 238 
+                self.state = 251 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while True:
-                    self.state = 236
+                    self.state = 249
                     self.match(CaskellParser.T__3)
-                    self.state = 237
+                    self.state = 250
                     self.pattern(0)
-                    self.state = 240 
+                    self.state = 253 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
                     if not (_la==4):
                         break
 
-                self.state = 242
+                self.state = 255
                 self.match(CaskellParser.RightParen)
                 pass
 
@@ -1738,15 +1831,49 @@ class CaskellParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 244
+                self.state = 257
                 self.match(CaskellParser.T__6)
+                pass
+
+            elif la_ == 7:
+                localctx = CaskellParser.ArrayPatternContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 258
+                self.match(CaskellParser.LeftBracket)
+                self.state = 259
+                self.match(CaskellParser.RightBracket)
+                pass
+
+            elif la_ == 8:
+                localctx = CaskellParser.ArrayPatternContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 260
+                self.match(CaskellParser.LeftBracket)
+                self.state = 261
+                self.pattern(0)
+                self.state = 266
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                while _la==4:
+                    self.state = 262
+                    self.match(CaskellParser.T__3)
+                    self.state = 263
+                    self.pattern(0)
+                    self.state = 268
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+
+                self.state = 269
+                self.match(CaskellParser.RightBracket)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 252
+            self.state = 278
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,28,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,30,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
@@ -1754,17 +1881,17 @@ class CaskellParser ( Parser ):
                     _prevctx = localctx
                     localctx = CaskellParser.OperationPatternContext(self, CaskellParser.PatternContext(self, _parentctx, _parentState))
                     self.pushNewRecursionContext(localctx, _startState, self.RULE_pattern)
-                    self.state = 247
-                    if not self.precpred(self._ctx, 7):
+                    self.state = 273
+                    if not self.precpred(self._ctx, 9):
                         from antlr4.error.Errors import FailedPredicateException
-                        raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
-                    self.state = 248
+                        raise FailedPredicateException(self, "self.precpred(self._ctx, 9)")
+                    self.state = 274
                     self.match(CaskellParser.Operator)
-                    self.state = 249
-                    self.pattern(8) 
-                self.state = 254
+                    self.state = 275
+                    self.pattern(10) 
+                self.state = 280
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,28,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,30,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1799,20 +1926,20 @@ class CaskellParser ( Parser ):
 
     def expr_sempred(self, localctx:ExprContext, predIndex:int):
             if predIndex == 2:
-                return self.precpred(self._ctx, 10)
+                return self.precpred(self._ctx, 12)
          
 
             if predIndex == 3:
-                return self.precpred(self._ctx, 8)
+                return self.precpred(self._ctx, 10)
          
 
             if predIndex == 4:
-                return self.precpred(self._ctx, 7)
+                return self.precpred(self._ctx, 9)
          
 
     def pattern_sempred(self, localctx:PatternContext, predIndex:int):
             if predIndex == 5:
-                return self.precpred(self._ctx, 7)
+                return self.precpred(self._ctx, 9)
          
 
 
